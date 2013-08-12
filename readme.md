@@ -27,7 +27,7 @@ Quick start guide
 > `'providers' => array(...` <br />
 > `'Laravella\Ravel\RavelServiceProvider',` <br />
 > `'Laravella\Crud\CrudServiceProvider')`
-6. **Initialize the database** with php artisan ravel:install
+6. **Initialize the database** with `php artisan ravel:install`
 7. You can start a development server with : `php artisan serve --port 80` from the command line
 8. **Generate metadata** by browsing to <http://localhost/dbinstall/install>
 9. Browse to :
