@@ -3,16 +3,27 @@ Laravella
 
 Laravel 4 starter project.  Hit the ground running with the most useful packages installed and integrated.
 
+Github
+-------------------
++ [Project Home](https://github.com/laravella/laravella)
++ [Download](https://github.com/laravella/laravella/archive/master.zip) 
+
 Included
 -------------------
 ###cborgia/radiate
 HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little login/register script to get you started.
 
 ###laravella/ravel
-CMS built with Angular.js but using the Twitter Bootstrap style. Forked from raftalks\ravel.
+CMS built with Angular.js. Forked from raftalks\ravel but using Twitter Bootstrap style.
 
 ###laravella/crud
 Database Create, Read, Update, Delete package.  laravella/crud also makes provision for custom views and and AJAX friendly api so that you can basically achieve anything you want with it.
+
+###laravella/cart
+A demo shopping cart built on laravella/crud (just an example project).
+
+###laravella/package
+A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.
 
 ###laravella/cms
 A content management system and blog built on crud.
@@ -39,7 +50,7 @@ API Docs
 -------------------
 + Laravella
 + [Cart](apidocs/cart/index.html)
-+ Crud
++ [Crud](apidocs/crud/index.html)
 + Ravel
 + CMS
 + Package

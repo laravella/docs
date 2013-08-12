@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Laravella\Crud\Params | crud</title>
+
+	<script type="text/javascript" src="resources/combined.js?3599222591"></script>
+	<script type="text/javascript" src="elementlist.js?582254133"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Illuminate.html">Illuminate<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.html">Support<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-Illuminate.Support.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Laravella.html">Laravella<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Laravella.Crud.html">Crud<span></span></a>
+						<ul>
+				<li><a href="namespace-Laravella.Crud.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravella.Crud.CrudBackupCommand.html">CrudBackupCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudRestoreCommand.html" class="invalid">CrudRestoreCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudServiceProvider.html">CrudServiceProvider</a></li>
+				<li><a href="class-Laravella.Crud.DbGopher.html">DbGopher</a></li>
+				<li><a href="class-Laravella.Crud.Log.html">Log</a></li>
+				<li class="active"><a href="class-Laravella.Crud.Params.html">Params</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravella.Crud.html" title="Summary of Laravella\Crud"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Params</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravella.html">Laravella</a>\<a href="namespace-Laravella.Crud.html">Crud</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Laravella.Crud.Params.html#5-130" title="Go to source code">src/Laravella/Crud/Params.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Laravella.Crud.Params.html#21-58" title="Go to source code">__construct</a>( <span>type <var>$status</var></span>, <span>type <var>$message</var></span>, <span>type <var>$log</var></span>, <span>type <var>$view</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$action</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>type <var>$tableMeta</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$tableActionViews</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$prefix</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>mixed <var>$selects</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$displayType</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>mixed <var>$dataA</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$tables</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$paginated</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed <var>$primaryTables</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Used to pass a consistent set of data to views and prevent "$variable not
+found" errors.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$status</var></dt>
+					<dd><code>type</code><br>$status Wether the action succeeded or not. See log for further details.</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>type</code><br>$action the action that controller is performing. See _db_actions.name</dd>
+					<dt><var>$log</var></dt>
+					<dd><code>type</code><br>$tableMeta The table's meta data. As generated by
+Laravella\Crud\Table::getTableMeta()</dd>
+					<dt><var>$view</var></dt>
+					<dd><code>type</code><br>$tables Is an array of Table objects. Actual data.</dd>
+					<dt><var>$action</var></dt>
+					<dd><code>type</code><br>$pageSize. The size of the pagination.</dd>
+					<dt><var>$tableMeta</var></dt>
+					<dd><code>type</code><br>$primaryTables A list of records with primary keys related to this table's via
+foreign keys.</dd>
+					<dt><var>$tableActionViews</var></dt>
+					<dd><code>type</code><br>$prefix Used to prepend the href on the primary key</dd>
+					<dt><var>$prefix</var></dt>
+					<dd><code>type</code><br>$view An entry in _db_views</dd>
+					<dt><var>$selects</var></dt>
+					<dd></dd>
+					<dt><var>$displayType</var></dt>
+					<dd></dd>
+					<dt><var>$dataA</var></dt>
+					<dd></dd>
+					<dt><var>$tables</var></dt>
+					<dd></dd>
+					<dt><var>$paginated</var></dt>
+					<dd></dd>
+					<dt><var>$primaryTables</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="forEdit" id="_forEdit">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Laravella.Crud.Params.html">Laravella\Crud\Params</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_forEdit">#</a>
+		<code><a href="source-class-Laravella.Crud.Params.html#60-84" title="Go to source code">forEdit</a>( <span>type <var>$status</var></span>, <span>type <var>$message</var></span>, <span>type <var>$log</var></span>, <span>type <var>$view</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$action</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>type <var>$tableMeta</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$tableActionViews</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$prefix</var> = <span class="php-quote">&quot;&quot;</span></span>, <span>type <var>$selects</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$displayType</var> = <span class="php-quote">&quot;text/html&quot;</span></span>, <span>type <var>$tables</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$paginated</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$primaryTables</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>For Edit</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>For Edit</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$status</var></dt>
+					<dd><code>type</code><br>$status</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>type</code><br>$message</dd>
+					<dt><var>$log</var></dt>
+					<dd><code>type</code><br>$log</dd>
+					<dt><var>$view</var></dt>
+					<dd><code>type</code><br>$view</dd>
+					<dt><var>$action</var></dt>
+					<dd><code>type</code><br>$action</dd>
+					<dt><var>$tableMeta</var></dt>
+					<dd><code>type</code><br>$tableMeta</dd>
+					<dt><var>$tableActionViews</var></dt>
+					<dd><code>type</code><br>$tableActionViews</dd>
+					<dt><var>$prefix</var></dt>
+					<dd><code>type</code><br>$prefix</dd>
+					<dt><var>$selects</var></dt>
+					<dd><code>type</code><br>$selects</dd>
+					<dt><var>$displayType</var></dt>
+					<dd><code>type</code><br>$tables</dd>
+					<dt><var>$tables</var></dt>
+					<dd><code>type</code><br>$paginated</dd>
+					<dt><var>$paginated</var></dt>
+					<dd><code>type</code><br>$primaryTables</dd>
+					<dt><var>$primaryTables</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravella.Crud.Params.html">Laravella\Crud\Params</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="asArray" id="_asArray">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_asArray">#</a>
+		<code><a href="source-class-Laravella.Crud.Params.html#94-128" title="Go to source code">asArray</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="action" id="$action">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#7" title="Go to source code"><var>$action</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$action" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tableMeta" id="$tableMeta">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#8" title="Go to source code"><var>$tableMeta</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$tableMeta" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tables" id="$tables">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#9" title="Go to source code"><var>$tables</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$tables" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="dataA" id="$dataA">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#10" title="Go to source code"><var>$dataA</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$dataA" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="paginated" id="$paginated">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#11" title="Go to source code"><var>$paginated</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$paginated" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="primaryTables" id="$primaryTables">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#12" title="Go to source code"><var>$primaryTables</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$primaryTables" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prefix" id="$prefix">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#13" title="Go to source code"><var>$prefix</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$prefix" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tableActionViews" id="$tableActionViews">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#14" title="Go to source code"><var>$tableActionViews</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$tableActionViews" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="view" id="$view">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#15" title="Go to source code"><var>$view</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$view" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="selects" id="$selects">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#16" title="Go to source code"><var>$selects</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$selects" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="log" id="$log">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#17" title="Go to source code"><var>$log</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$log" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="status" id="$status">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#18" title="Go to source code"><var>$status</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;success&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$status" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="displayType" id="$displayType">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Laravella.Crud.Params.html#19" title="Go to source code"><var>$displayType</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;text/html&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$displayType" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		crud API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

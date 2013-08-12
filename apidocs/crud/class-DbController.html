@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class DbController | crud</title>
+
+	<script type="text/javascript" src="resources/combined.js?3599222591"></script>
+	<script type="text/javascript" src="elementlist.js?582254133"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Illuminate.html">Illuminate<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.html">Support<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-Illuminate.Support.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Laravella.html">Laravella<span></span></a>
+						<ul>
+				<li><a href="namespace-Laravella.Crud.html">Crud<span></span></a>
+						<ul>
+				<li><a href="namespace-Laravella.Crud.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AddMcollectionMediaTable.html">AddMcollectionMediaTable</a></li>
+				<li><a href="class-ComposerAutoloaderInit0812ead62c33200f1cfc491b452f7c6a.html">ComposerAutoloaderInit0812ead62c33200f1cfc491b452f7c6a</a></li>
+				<li><a href="class-CreateActionsTable.html">CreateActionsTable</a></li>
+				<li><a href="class-CreateAuditTable.html">CreateAuditTable</a></li>
+				<li><a href="class-CreateDisplayTypesTable.html">CreateDisplayTypesTable</a></li>
+				<li><a href="class-CreateFieldsTable.html">CreateFieldsTable</a></li>
+				<li><a href="class-CreateLogsTable.html">CreateLogsTable</a></li>
+				<li><a href="class-CreateMenusTable.html">CreateMenusTable</a></li>
+				<li><a href="class-CreateOptionsTable.html">CreateOptionsTable</a></li>
+				<li><a href="class-CreateOptionTypesTable.html">CreateOptionTypesTable</a></li>
+				<li><a href="class-CreateSentryGroups.html">CreateSentryGroups</a></li>
+				<li><a href="class-CreateSentryThrottle.html">CreateSentryThrottle</a></li>
+				<li><a href="class-CreateSentryUsers.html">CreateSentryUsers</a></li>
+				<li><a href="class-CreateSentryUsersGroupsPivot.html">CreateSentryUsersGroupsPivot</a></li>
+				<li><a href="class-CreateSeveritiesTable.html">CreateSeveritiesTable</a></li>
+				<li><a href="class-CreateTableActionViewsTable.html">CreateTableActionViewsTable</a></li>
+				<li><a href="class-CreateTablesTable.html">CreateTablesTable</a></li>
+				<li><a href="class-CreateUserGroupPermissionsTable.html">CreateUserGroupPermissionsTable</a></li>
+				<li><a href="class-CreateUsergroupsTable.html">CreateUsergroupsTable</a></li>
+				<li><a href="class-CreateUserPermissionsTable.html">CreateUserPermissionsTable</a></li>
+				<li><a href="class-CreateUsersTable.html">CreateUsersTable</a></li>
+				<li><a href="class-CreateViewsTable.html">CreateViewsTable</a></li>
+				<li><a href="class-CreateWidgetTypesTable.html">CreateWidgetTypesTable</a></li>
+				<li><a href="class-CrudBackupSeeder.html">CrudBackupSeeder</a></li>
+				<li><a href="class-CrudRestoreSeeder.html">CrudRestoreSeeder</a></li>
+				<li><a href="class-DatabaseSeeder.html">DatabaseSeeder</a></li>
+				<li><a href="class-DbApiController.html">DbApiController</a></li>
+				<li class="active"><a href="class-DbController.html">DbController</a></li>
+				<li><a href="class-DbInstallController.html">DbInstallController</a></li>
+				<li><a href="class-Domain.html">Domain</a></li>
+				<li><a href="class-field.html">field</a></li>
+				<li><a href="class-foreignKey.html">foreignKey</a></li>
+				<li><a href="class-Model.html">Model</a></li>
+				<li><a href="class-primaryKey.html">primaryKey</a></li>
+				<li><a href="class-Record.html">Record</a></li>
+				<li><a href="class-Relation.html">Relation</a></li>
+				<li><a href="class-SeedActions.html">SeedActions</a></li>
+				<li><a href="class-SeedDisplayTypes.html">SeedDisplayTypes</a></li>
+				<li><a href="class-SeedGroups.html">SeedGroups</a></li>
+				<li><a href="class-SeedLogs.html">SeedLogs</a></li>
+				<li><a href="class-SeedMenus.html">SeedMenus</a></li>
+				<li><a href="class-SeedOptions.html">SeedOptions</a></li>
+				<li><a href="class-SeedSeverities.html">SeedSeverities</a></li>
+				<li><a href="class-SeedTables.html">SeedTables</a></li>
+				<li><a href="class-SeedUsergroups.html">SeedUsergroups</a></li>
+				<li><a href="class-SeedUsers.html">SeedUsers</a></li>
+				<li><a href="class-SeedViews.html">SeedViews</a></li>
+				<li><a href="class-SeedWidgetTypes.html">SeedWidgetTypes</a></li>
+				<li><a href="class-Table.html">Table</a></li>
+				<li><a href="class-UpdateReferences.html">UpdateReferences</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-action.html">action</a></li>
+				<li><a href="function-app.html">app</a></li>
+				<li><a href="function-app_path.html">app_path</a></li>
+				<li><a href="function-array_add.html">array_add</a></li>
+				<li><a href="function-array_build.html">array_build</a></li>
+				<li><a href="function-array_divide.html">array_divide</a></li>
+				<li><a href="function-array_dot.html">array_dot</a></li>
+				<li><a href="function-array_except.html">array_except</a></li>
+				<li><a href="function-array_fetch.html">array_fetch</a></li>
+				<li><a href="function-array_first.html">array_first</a></li>
+				<li><a href="function-array_flatten.html">array_flatten</a></li>
+				<li><a href="function-array_forget.html">array_forget</a></li>
+				<li><a href="function-array_get.html">array_get</a></li>
+				<li><a href="function-array_only.html">array_only</a></li>
+				<li><a href="function-array_pluck.html">array_pluck</a></li>
+				<li><a href="function-array_pull.html">array_pull</a></li>
+				<li><a href="function-array_set.html">array_set</a></li>
+				<li><a href="function-array_sort.html">array_sort</a></li>
+				<li><a href="function-asset.html">asset</a></li>
+				<li><a href="function-base_path.html">base_path</a></li>
+				<li><a href="function-camel_case.html">camel_case</a></li>
+				<li><a href="function-class_basename.html">class_basename</a></li>
+				<li><a href="function-csrf_token.html">csrf_token</a></li>
+				<li><a href="function-dd.html">dd</a></li>
+				<li><a href="function-e.html">e</a></li>
+				<li><a href="function-ends_with.html">ends_with</a></li>
+				<li><a href="function-head.html">head</a></li>
+				<li><a href="function-last.html">last</a></li>
+				<li><a href="function-link_to.html">link_to</a></li>
+				<li><a href="function-link_to_action.html">link_to_action</a></li>
+				<li><a href="function-link_to_asset.html">link_to_asset</a></li>
+				<li><a href="function-link_to_route.html">link_to_route</a></li>
+				<li><a href="function-object_get.html">object_get</a></li>
+				<li><a href="function-public_path.html">public_path</a></li>
+				<li><a href="function-route.html">route</a></li>
+				<li><a href="function-secure_asset.html">secure_asset</a></li>
+				<li><a href="function-secure_url.html">secure_url</a></li>
+				<li><a href="function-snake_case.html">snake_case</a></li>
+				<li><a href="function-starts_with.html">starts_with</a></li>
+				<li><a href="function-storage_path.html">storage_path</a></li>
+				<li><a href="function-str_contains.html">str_contains</a></li>
+				<li><a href="function-str_finish.html">str_finish</a></li>
+				<li><a href="function-str_is.html">str_is</a></li>
+				<li><a href="function-str_plural.html">str_plural</a></li>
+				<li><a href="function-str_random.html">str_random</a></li>
+				<li><a href="function-str_singular.html">str_singular</a></li>
+				<li><a href="function-studly_case.html">studly_case</a></li>
+				<li><a href="function-trans.html">trans</a></li>
+				<li><a href="function-trans_choice.html">trans_choice</a></li>
+				<li><a href="function-url.html">url</a></li>
+				<li><a href="function-value.html">value</a></li>
+				<li><a href="function-with.html">with</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DbController</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Controller
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>DbController</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-DbApiController.html">DbApiController</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+		<b>Located at</b> <a href="source-class-DbController.html#5-486" title="Go to source code">src/controllers/DbController.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="log" id="_log">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_log">#</a>
+		<code><a href="source-class-DbController.html#27-35" title="Go to source code">log</a>( <span>type <var>$severity</var></span>, <span>type <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$severity</var></dt>
+					<dd><code>type</code><br>$severity</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>type</code><br>$message</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLog" id="_getLog">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLog">#</a>
+		<code><a href="source-class-DbController.html#37-45" title="Go to source code">getLog</a>( )</code>
+
+		<div class="description short">
+			
+<p>Getter for $log</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Getter for $log</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIndex" id="_getIndex">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIndex">#</a>
+		<code><a href="source-class-DbController.html#47-57" title="Go to source code">getIndex</a>( )</code>
+
+		<div class="description short">
+			
+<p>The root of the crud application /db</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The root of the crud application /db</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__getView" id="___getView">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___getView">#</a>
+		<code><a href="source-class-DbController.html#59-75" title="Go to source code">__getView</a>( <span>type <var>$tableName</var></span>, <span>type <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Find the right view to use with the action</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Find the right view to use with the action</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$action</var></dt>
+					<dd><code>type</code><br>$action</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__getTableActionView" id="___getTableActionView">
+
+		<td class="attributes"><code>
+			 protected 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___getTableActionView">#</a>
+		<code><a href="source-class-DbController.html#77-95" title="Go to source code">__getTableActionView</a>( <span>type <var>$tableName</var></span>, <span>type <var>$viewId</var></span>, <span>type <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get a record from _db_table_action_views as an stdClass object</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get a record from _db_table_action_views as an stdClass object</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$viewId</var></dt>
+					<dd><code>type</code><br>$viewId</dd>
+					<dt><var>$action</var></dt>
+					<dd><code>type</code><br>$action</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__getPermissions" id="___getPermissions">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___getPermissions">#</a>
+		<code><a href="source-class-DbController.html#97-107" title="Go to source code">__getPermissions</a>( <span>type <var>$tableName</var></span>, <span>type <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check permissions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check permissions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$action</var></dt>
+					<dd><code>type</code><br>$action</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSelect" id="_getSelect">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSelect">#</a>
+		<code><a href="source-class-DbController.html#109-132" title="Go to source code">getSelect</a>( <span>type <var>$tableName</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$message</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>/db/select/{tablename}</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>/db/select/{tablename}</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$table</dd>
+					<dt><var>$message</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__indexByPk" id="___indexByPk">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___indexByPk">#</a>
+		<code><a href="source-class-DbController.html#134-145" title="Go to source code">__indexByPk</a>( <span>mixed <var>$array</var></span>, <span>mixed <var>$pkFieldName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Index an array of records (of type StdClass) according to the pk value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Index an array of records (of type StdClass) according to the pk value</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__indexByValue" id="___indexByValue">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___indexByValue">#</a>
+		<code><a href="source-class-DbController.html#147-158" title="Go to source code">__indexByValue</a>( <span>mixed <var>$array</var></span>, <span>mixed <var>$fieldName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Index an array of records according to the value of $fieldName</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Index an array of records according to the value of $fieldName</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__attachPkData" id="___attachPkData">
+
+		<td class="attributes"><code>
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___attachPkData">#</a>
+		<code><a href="source-class-DbController.html#160-235" title="Go to source code">__attachPkData</a>( <span>type <var>$records</var></span>, <span>type <var>$ma</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$records</var></dt>
+					<dd><code>type</code><br>$records</dd>
+					<dt><var>$ma</var></dt>
+					<dd><code>type</code><br>$ma</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSearch" id="_getSearch">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSearch">#</a>
+		<code><a href="source-class-DbController.html#237-266" title="Go to source code">getSearch</a>( <span>type <var>$tableName</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$q</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Handle a search request and display it in the select view</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Handle a search request and display it in the select view</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$q</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__makeParams" id="___makeParams">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Laravella.Crud.Params.html">Laravella\Crud\Params</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___makeParams">#</a>
+		<code><a href="source-class-DbController.html#268-336" title="Go to source code">__makeParams</a>( <span>type <var>$status</var></span>, <span>type <var>$message</var></span>, <span>type <var>$data</var></span>, <span>mixed <var>$tableName</var></span>, <span>mixed <var>$action</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a standard params object that will be passed to the view.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a standard params object that will be passed to the view.</p>
+
+<p>Data is not fetched yet, use data-&gt;get(), or data-&gt;paginate() to
+fetch</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$status</var></dt>
+					<dd><code>type</code><br>$data</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$data</var></dt>
+					<dd><code>type</code><br>$action</dd>
+					<dt><var>$tableName</var></dt>
+					<dd></dd>
+					<dt><var>$action</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Laravella.Crud.Params.html">Laravella\Crud\Params</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDelete" id="_getDelete">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDelete">#</a>
+		<code><a href="source-class-DbController.html#338-362" title="Go to source code">getDelete</a>( <span>type <var>$tableName</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$recorid</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Delete a record</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete a record</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$recorid</var></dt>
+					<dd><code>type</code><br>$recorid</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInsert" id="_getInsert">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInsert">#</a>
+		<code><a href="source-class-DbController.html#364-378" title="Go to source code">getInsert</a>( <span>type <var>$tableName</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Prompt user to insert a new record</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prompt user to insert a new record</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$table</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEdit" id="_getEdit">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEdit">#</a>
+		<code><a href="source-class-DbController.html#380-403" title="Go to source code">getEdit</a>( <span>type <var>$tableName</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$pkValue</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Display a single record on screen to be edited by the user</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Display a single record on screen to be edited by the user</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$table</dd>
+					<dt><var>$pkValue</var></dt>
+					<dd><code>type</code><br>$pkValue</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="postEdit" id="_postEdit">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_postEdit">#</a>
+		<code><a href="source-class-DbController.html#405-419" title="Go to source code">postEdit</a>( <span>type <var>$tableName</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$pkValue</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Update data to the database</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update data to the database</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$pkValue</var></dt>
+					<dd><code>type</code><br>$id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="postInsert" id="_postInsert">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_postInsert">#</a>
+		<code><a href="source-class-DbController.html#421-432" title="Go to source code">postInsert</a>( <span>mixed <var>$tableName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Insert a new record into $tableName</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Insert a new record into $tableName</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__getPkSelects" id="___getPkSelects">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___getPkSelects">#</a>
+		<code><a href="source-class-DbController.html#434-455" title="Go to source code">__getPkSelects</a>( <span>type <var>$meta</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Loop through foreign keys and generate an array of select boxes for each
+related primary key</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Loop through foreign keys and generate an array of select boxes for each
+related primary key</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$meta</var></dt>
+					<dd><code>type</code><br>$meta</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__getSelect" id="___getSelect">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___getSelect">#</a>
+		<code><a href="source-class-DbController.html#457-472" title="Go to source code">__getSelect</a>( <span>mixed <var>$table</var></span>, <span>mixed <var>$valueField</var></span>, <span>mixed <var>$textField</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get a select array(object(value, text))</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get a select array(object(value, text))</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="missingMethod" id="_missingMethod">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_missingMethod">#</a>
+		<code><a href="source-class-DbController.html#474-484" title="Go to source code">missingMethod</a>( <span>type <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+<p>If method is not found</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>If method is not found</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd><code>type</code><br>$parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="SUCCESS" id="SUCCESS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DbController.html#10" title="Go to source code"><b>SUCCESS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;success&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#SUCCESS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="INFO" id="INFO">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DbController.html#11" title="Go to source code"><b>INFO</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;info&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#INFO" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="IMPORTANT" id="IMPORTANT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DbController.html#12" title="Go to source code"><b>IMPORTANT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;important&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#IMPORTANT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="HTML" id="HTML">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DbController.html#14" title="Go to source code"><b>HTML</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;text/html&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#HTML" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="XML" id="XML">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DbController.html#15" title="Go to source code"><b>XML</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;text/xml&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#XML" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="JSON" id="JSON">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-DbController.html#16" title="Go to source code"><b>JSON</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">&quot;text/json&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#JSON" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="layout" id="$layout">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DbController.html#7" title="Go to source code"><var>$layout</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'crud::layouts.default'</span></code></td>
+		<td class="description"><div>
+			<a href="#$layout" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="displayType" id="$displayType">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DbController.html#18" title="Go to source code"><var>$displayType</var></a>
+		</td>
+		<td class="value"><code><code><a href="class-DbController.html#HTML">DbController::<b>HTML</b></a></code></code></td>
+		<td class="description"><div>
+			<a href="#$displayType" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		crud API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

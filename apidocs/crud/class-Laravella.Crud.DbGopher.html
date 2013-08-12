@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Laravella\Crud\DbGopher | crud</title>
+
+	<script type="text/javascript" src="resources/combined.js?3599222591"></script>
+	<script type="text/javascript" src="elementlist.js?582254133"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Illuminate.html">Illuminate<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.html">Support<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-Illuminate.Support.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Laravella.html">Laravella<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Laravella.Crud.html">Crud<span></span></a>
+						<ul>
+				<li><a href="namespace-Laravella.Crud.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravella.Crud.CrudBackupCommand.html">CrudBackupCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudRestoreCommand.html" class="invalid">CrudRestoreCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudServiceProvider.html">CrudServiceProvider</a></li>
+				<li class="active"><a href="class-Laravella.Crud.DbGopher.html">DbGopher</a></li>
+				<li><a href="class-Laravella.Crud.Log.html">Log</a></li>
+				<li><a href="class-Laravella.Crud.Params.html">Params</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravella.Crud.html" title="Summary of Laravella\Crud"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DbGopher</h1>
+
+
+	<div class="description">
+	
+<p>Description of DbGopher</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravella.html">Laravella</a>\<a href="namespace-Laravella.Crud.html">Crud</a><br />
+		
+
+				<b>Author:</b>
+				Victor<br />
+		<b>Located at</b> <a href="source-class-Laravella.Crud.DbGopher.html#5-78" title="Go to source code">src/Laravella/Crud/DbGopher.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="makeArray" id="_makeArray">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_makeArray">#</a>
+		<code><a href="source-class-Laravella.Crud.DbGopher.html#12-46" title="Go to source code">makeArray</a>( <span>type <var>$meta</var></span>, <span>type <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Turn a StdClass object into an array using an array of meta data objects.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Turn a StdClass object into an array using an array of meta data objects.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$meta</var></dt>
+					<dd><code>type</code><br>$meta An array of stdClass objects, each object representing a field's metadata
+(_db_fields). You can use Table::getMeta($tableName) to get this.</dd>
+					<dt><var>$data</var></dt>
+					<dd><code>type</code><br>$data An array of stdClass objects, each object a record. (the result of
+DB::table('tableName')-&gt;get() not -&gt;first() )</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="makeArrayA" id="_makeArrayA">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_makeArrayA">#</a>
+		<code><a href="source-class-Laravella.Crud.DbGopher.html#48-76" title="Go to source code">makeArrayA</a>( <span>type <var>$metaA</var></span>, <span>type <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Turn a StdClass object into an array using an array of meta data arrays.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Turn a StdClass object into an array using an array of meta data arrays.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$metaA</var></dt>
+					<dd><code>type</code><br>$meta An array of arrays, each one representing a field's metadata (_db_fields)</dd>
+					<dt><var>$data</var></dt>
+					<dd><code>type</code><br>$data An array of stdClass objects, each object a record</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		crud API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
