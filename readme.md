@@ -17,7 +17,7 @@ HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little lo
 CMS built with Angular.js. Forked from raftalks\ravel but using Twitter Bootstrap style.
 
 ###laravella/crud
-Database Create, Read, Update, Delete package.  laravella/crud also makes provision for custom views and and AJAX friendly api so that you can basically achieve anything you want with it.
+Database Create, Read, Update, Delete package.  laravella/crud also makes provision for custom views and an AJAX friendly api so that you can basically achieve anything you want with it (not just crud).
 
 ###laravella/cart
 A demo shopping cart built on laravella/crud (just an example project).
