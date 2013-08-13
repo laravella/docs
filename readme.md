@@ -26,7 +26,7 @@ A demo shopping cart built on laravella/crud (just an example project).
 A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.
 
 ###laravella/cms
-A content management system and blog built on crud.
+A content management system and blog built on crud.  Currently supplements laravella/ravel but might replace it eventually.
 
 Quick start guide
 -------------------
@@ -34,17 +34,18 @@ Quick start guide
 2. **Run : composer update** (or : php composer.phar update)
 3. You should have a database server running and a target database created.
 4. **Edit database details** in /app/config/database.php.
-5. **Add providers** in /app/config/app.php : 
+5. **Add providers** in /app/config/app.php (if you are using your own project and they aren't added already): 
 > `'providers' => array(...` <br />
 > `'Laravella\Ravel\RavelServiceProvider',` <br />
 > `'Laravella\Crud\CrudServiceProvider')`
-6. **Initialize the database** with `php artisan ravel:install`
-7. You can start a development server with : `php artisan serve --port 80` from the command line
-8. **Generate metadata** by browsing to <http://localhost/dbinstall/install>
+6. **Initialize the cms database** with `php artisan ravel:install`
+7. **Generate metadata** with `php artisan crud:install`
+8. You can start a development server with : `php artisan serve --port 80` from the command line
 9. Browse to :
 > <http://localhost> for the frontent <br />
-> <http://localhost/admin> for cms console <br />
-> <http://localhost/db> for crud console 
+> <http://localhost/admin> for the cms console <br />
+> <http://localhost/db/select/_db_tables> for crud console  <br />
+> or <http://localhost/db/select/{tablename}> to edit any table 
 
 API Docs
 -------------------
@@ -61,4 +62,5 @@ http://opensource.org/licenses/MIT
 
 What's new
 -------------------
-4.1.004
+4.1.006
+dynamic menus

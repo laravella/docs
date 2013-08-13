@@ -36,26 +36,27 @@
 <h3 id="laravellapackage">laravella/package</h3>
 <p>A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.</p>
 <h3 id="laravellacms">laravella/cms</h3>
-<p>A content management system and blog built on crud.</p>
+<p>A content management system and blog built on crud.  Currently supplements laravella/ravel but might replace it eventually.</p>
 <h2 id="quick-start-guide">Quick start guide</h2>
 <ol>
 <li><strong>Download</strong> the laravella project (Git clone or zip extract)</li>
 <li><strong>Run : composer update</strong> (or : php composer.phar update)</li>
 <li>You should have a database server running and a target database created.</li>
 <li><strong>Edit database details</strong> in /app/config/database.php.</li>
-<li><strong>Add providers</strong> in /app/config/app.php : <blockquote>
+<li><strong>Add providers</strong> in /app/config/app.php (if you are using your own project and they aren't added already): <blockquote>
 <p><code>'providers' =&gt; array(...</code> <br />
 <code>'Laravella\Ravel\RavelServiceProvider',</code> <br />
 <code>'Laravella\Crud\CrudServiceProvider')</code></p>
 </blockquote>
 </li>
-<li><strong>Initialize the database</strong> with <code>php artisan ravel:install</code></li>
+<li><strong>Initialize the cms database</strong> with <code>php artisan ravel:install</code></li>
+<li><strong>Generate metadata</strong> with <code>php artisan crud:install</code></li>
 <li>You can start a development server with : <code>php artisan serve --port 80</code> from the command line</li>
-<li><strong>Generate metadata</strong> by browsing to <a href="http://localhost/dbinstall/install">http://localhost/dbinstall/install</a></li>
 <li>Browse to :<blockquote>
 <p><a href="http://localhost">http://localhost</a> for the frontent <br />
-<a href="http://localhost/admin">http://localhost/admin</a> for cms console <br />
-<a href="http://localhost/db">http://localhost/db</a> for crud console </p>
+<a href="http://localhost/admin">http://localhost/admin</a> for the cms console <br />
+<a href="http://localhost/db/select/_db_tables">http://localhost/db/select/_db_tables</a> for crud console  <br />
+or <a href="http://localhost/db/select/{tablename}">http://localhost/db/select/{tablename}</a> to edit any table </p>
 </blockquote>
 </li>
 </ol>
@@ -71,7 +72,8 @@
 <h2 id="license">License</h2>
 <p>http://opensource.org/licenses/MIT</p>
 <h2 id="whats-new">What's new</h2>
-<p>4.1.005</p>
+<p>4.1.006
+dynamic menus</p>
 <!-- /markable.in -->
 
 <hr />
