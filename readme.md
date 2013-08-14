@@ -17,7 +17,7 @@ HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little lo
 CMS built with Angular.js. Forked from raftalks\ravel but using Twitter Bootstrap style.
 
 ###laravella/crud
-Database Create, Read, Update, Delete package.  laravella/crud also makes provision for custom views and an AJAX friendly api so that you can basically achieve anything you want with it (not just crud).
+Database Create, Read, Update, Delete package.  laravella/crud also makes provision for custom views and and AJAX friendly api so that you can basically achieve anything you want with it.
 
 ###laravella/cart
 A demo shopping cart built on laravella/crud (just an example project).
@@ -26,7 +26,7 @@ A demo shopping cart built on laravella/crud (just an example project).
 A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.
 
 ###laravella/cms
-A content management system and blog built on crud.  Currently supplements laravella/ravel but might replace it eventually.
+A content management system and blog built on crud.
 
 Quick start guide
 -------------------
@@ -34,18 +34,19 @@ Quick start guide
 2. **Run : composer update** (or : php composer.phar update)
 3. You should have a database server running and a target database created.
 4. **Edit database details** in /app/config/database.php.
-5. **Add providers** in /app/config/app.php (if you are using your own project and they aren't added already): 
+5. **Add providers** in /app/config/app.php : 
 > `'providers' => array(...` <br />
 > `'Laravella\Ravel\RavelServiceProvider',` <br />
 > `'Laravella\Crud\CrudServiceProvider')`
-6. **Initialize the cms database** with `php artisan ravel:install`
+6. **Initialize the database** with `php artisan ravel:install`
 7. **Generate metadata** with `php artisan crud:install`
 8. You can start a development server with : `php artisan serve --port 80` from the command line
 9. Browse to :
-> <http://localhost> for the frontent <br />
+> <http://localhost> for the frontend <br />
 > <http://localhost/admin> for the cms console <br />
-> <http://localhost/db/select/_db_tables> for crud console  <br />
-> or <http://localhost/db/select/{tablename}> to edit any table 
+> <http://localhost/db/select/_db_tables> for crud console 
+> <http://localhost/db/select/{tablename}> to edit an existing table 
+10. Run `php artisan crud:install` again to regenerate meta data after you've added or altered tables.
 
 API Docs
 -------------------
@@ -62,5 +63,4 @@ http://opensource.org/licenses/MIT
 
 What's new
 -------------------
-4.1.006
-dynamic menus
+4.1.004
