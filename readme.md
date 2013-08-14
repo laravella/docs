@@ -63,4 +63,5 @@ http://opensource.org/licenses/MIT
 
 What's new
 -------------------
-4.1.004
+4.1.006 <br />
+dynamic menus
