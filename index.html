@@ -41,14 +41,13 @@
 <p>A content management system and blog built on crud.  It supplements laravella/ravel at the moment but will eventually replace it.</p>
 <h3 id="laravellauploader">laravella/uploader</h3>
 <p>A sweet file uploader.</p>
-
 <h2 id="screenshots">Screenshots</h2>
-<hr />
+
+<p><hr />
 <a href="images/large-upload.png"><img alt="File Uploads" src="images/large-upload.png" title="File Uploads" style="border:5px solid #f0e0d0; width: 640px" /></a>
 <hr />
 <a href="images/large-menu-permissions.png"><img alt="Menu Permissions" src="images/large-menu-permissions.png" title="Menu Permissions" style="border:5px solid #f0e0d0; width: 640px" /></a>
-<hr />
-
+<hr /></p>
 <h2 id="quick-start-guide">Quick start guide</h2>
 <ol>
 <li><strong>Download</strong> the laravella project (Git clone or zip extract)</li>
@@ -58,7 +57,9 @@
 <li><strong>Add providers</strong> in /app/config/app.php : <blockquote>
 <p><code>'providers' =&gt; array(...</code> <br />
 <code>'Laravella\Ravel\RavelServiceProvider',</code> <br />
-<code>'Laravella\Crud\CrudServiceProvider')</code></p>
+<code>'Laravella\Crud\CrudServiceProvider',</code> <br />
+<code>'Laravella\CMS\CMSServiceProvider',</code> <br />
+<code>'Laravella\Uploader\UploaderServiceProvider')</code></p>
 </blockquote>
 </li>
 <li><strong>Initialize the database</strong> with <code>php artisan ravel:install</code></li>

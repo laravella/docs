@@ -33,10 +33,12 @@ A content management system and blog built on crud.  It supplements laravella/ra
 ###laravella/uploader
 A sweet file uploader.
 
-Screenshots
--------------------
-![File Uploads](images/large-upload.png "File Uploads")
-![Menu Permissions](images/large-menu-permissions.png "Menu Permissions")
+<h2 id="screenshots">Screenshots</h2>
+<hr />
+<a href="images/large-upload.png"><img alt="File Uploads" src="images/large-upload.png" title="File Uploads" style="border:5px solid #f0e0d0; width: 640px" /></a>
+<hr />
+<a href="images/large-menu-permissions.png"><img alt="Menu Permissions" src="images/large-menu-permissions.png" title="Menu Permissions" style="border:5px solid #f0e0d0; width: 640px" /></a>
+<hr />
 
 Quick start guide
 -------------------
@@ -47,7 +49,9 @@ Quick start guide
 5. **Add providers** in /app/config/app.php : 
 > `'providers' => array(...` <br />
 > `'Laravella\Ravel\RavelServiceProvider',` <br />
-> `'Laravella\Crud\CrudServiceProvider')`
+> `'Laravella\Crud\CrudServiceProvider',` <br />
+> `'Laravella\CMS\CMSServiceProvider',` <br />
+> `'Laravella\Uploader\UploaderServiceProvider')`
 6. **Initialize the database** with `php artisan ravel:install`
 7. **Generate metadata** with `php artisan crud:install`
 8. **Add uploader to admin menu** with `php artisan uploader:install`
