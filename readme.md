@@ -31,7 +31,7 @@ A starter package for laravel. Includes a facade, artisan commands, IoC class, m
 A content management system and blog built on crud.  It supplements laravella/ravel at the moment but will eventually replace it.
 
 ###laravella/uploader
-A sweet file uploader.
+A sweet file uploader from [blueimp](https://github.com/blueimp/jQuery-File-Upload) packaged for laravel and integrated into Laravella/CMS.
 
 <h2 id="screenshots">Screenshots</h2>
 <hr />
