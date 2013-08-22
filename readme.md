@@ -1,7 +1,7 @@
 Laravella 
 ==========
 
-Laravel 4 starter project.  Hit the ground running with the most useful packages installed and integrated.
+Laravel 4 Admin console, CMS and starter project.  Hit the ground running with the most useful packages installed and integrated.
 
 Github
 -------------------
@@ -30,6 +30,14 @@ A starter package for laravel. Includes a facade, artisan commands, IoC class, m
 ###laravella/cms
 A content management system and blog built on crud.  It supplements laravella/ravel at the moment but will eventually replace it.
 
+###laravella/uploader
+A sweet file uploader.
+
+Screenshots
+-------------------
+![File Uploads](images/large-upload.png "File Uploads")
+![Menu Permissions](images/large-menu-permissions.png "Menu Permissions")
+
 Quick start guide
 -------------------
 1. **Download** the laravella project (Git clone or zip extract)
@@ -42,14 +50,15 @@ Quick start guide
 > `'Laravella\Crud\CrudServiceProvider')`
 6. **Initialize the database** with `php artisan ravel:install`
 7. **Generate metadata** with `php artisan crud:install`
-8. You can start a development server with : `php artisan serve --port 80` from the command line
-9. Browse to :
+8. **Add uploader to admin menu** with `php artisan uploader:install`
+9. You can start a development server with : `php artisan serve --port 80` from the command line
+10. Browse to :
 > <http://localhost> for the frontend <br />
 > <http://localhost/admin> for the cms console <br />
 > <http://localhost/db/select/_db_tables> for crud console  <br />
 > <http://localhost/db/select/{tablename}> to edit an existing table  <br />
 > Default username is **admin** and password is **ravel**
-10. Run `php artisan crud:install` again to regenerate meta data after you've added or altered tables.
+11. Run `php artisan crud:install` again to regenerate meta data after you've added or altered tables.
 
 API Docs
 -------------------
@@ -59,13 +68,17 @@ API Docs
 + Ravel
 + CMS
 + Package
++ Uploader
 
 License
 -------------------
-http://opensource.org/licenses/MIT
+<http://opensource.org/licenses/MIT>
 
 What's new
 -------------------
+4.1.008 <br />
+File uploader included
+
 4.1.007 <br />
 Options and option categories
 
