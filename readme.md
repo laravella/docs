@@ -45,19 +45,18 @@ Quick start guide
 4. **Edit database details** in /app/config/database.php.
 5. **Add providers** in /app/config/app.php : 
 > `'providers' => array(...` <br />
+> `'Laravella\Laravella\LaravellaServiceProvider',` <br />
 > `'Laravella\Crud\CrudServiceProvider',` <br />
 > `'Laravella\CMS\CMSServiceProvider',` <br />
 > `'Laravella\Uploader\UploaderServiceProvider')`
-6. **Initialize the database** with `php artisan cms:install`
-7. **Generate metadata** with `php artisan crud:install`
-8. **Add uploader to admin menu** with `php artisan uploader:install`
-9. You can start a development server with : `php artisan serve --port 80` from the command line
-10. Browse to :
+6. **Install with : ** with `php artisan laravella:install`
+7. You can start a development server with : `php artisan serve --port 80` from the command line
+8. Browse to :
 > <http://localhost> for the frontend <br />
 > <http://localhost/db/select/_db_tables> for crud console  <br />
 > <http://localhost/db/select/{tablename}> to edit an existing table  <br />
 > Default username is **admin@yourwebsite.com** and password is **ravel**
-11. Run `php artisan crud:install` again to regenerate meta data after you've added or altered tables.
+9. Run `php artisan crud:install` again to regenerate meta data after you've added or altered tables.
 
 API Docs
 -------------------

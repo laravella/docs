@@ -35,14 +35,13 @@
 <li><strong>Edit database details</strong> in /app/config/database.php.</li>
 <li><strong>Add providers</strong> in /app/config/app.php : <blockquote>
 <p><code>'providers' =&gt; array(...</code> <br />
+<code>'Laravella\Laravella\LaravellaServiceProvider',</code> <br />
 <code>'Laravella\Crud\CrudServiceProvider',</code> <br />
 <code>'Laravella\CMS\CMSServiceProvider',</code> <br />
 <code>'Laravella\Uploader\UploaderServiceProvider')</code></p>
 </blockquote>
 </li>
-<li><strong>Initialize the database</strong> with <code>php artisan cms:install</code></li>
-<li><strong>Generate metadata</strong> with <code>php artisan crud:install</code></li>
-<li><strong>Add uploader to admin menu</strong> with <code>php artisan uploader:install</code></li>
+<li><strong>Install with : </strong> with <code>php artisan laravella:install</code></li>
 <li>You can start a development server with : <code>php artisan serve --port 80</code> from the command line</li>
 <li>Browse to :<blockquote>
 <p><a href="http://localhost">http://localhost</a> for the frontend <br />
