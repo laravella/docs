@@ -6,6 +6,7 @@ Laravel 4 Admin console, CMS and starter project.  Hit the ground running with t
 Github
 -------------------
 + [Project Home](https://github.com/laravella/laravella)
++ [Wiki](https://github.com/laravella/laravella/wiki)
 + [Documentation](http://laravella.github.io/docs/)
 + [Download](https://github.com/laravella/laravella/archive/master.zip) 
 + [Issues and Questions](https://github.com/laravella/laravella/issues)
