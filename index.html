@@ -22,7 +22,6 @@
 <h2 id="github">Github</h2>
 <ul>
 <li><a href="https://github.com/laravella/laravella">Project Home</a></li>
-<li><a href="https://github.com/laravella/laravella/wiki">Wiki</a></li>
 <li><a href="http://laravella.github.io/docs/">Documentation</a></li>
 <li><a href="https://github.com/laravella/laravella/archive/master.zip">Download</a> </li>
 <li><a href="https://github.com/laravella/laravella/issues">Issues and Questions</a></li>
@@ -38,6 +37,8 @@
 <p>A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.</p>
 <h3 id="laravellacms">laravella/cms</h3>
 <p>A content management system and blog built on crud.</p>
+<h3 id="laravellaskins">laravella/skins</h3>
+<p>An easy way to install new themes.</p>
 <h3 id="laravellauploader">laravella/uploader</h3>
 <p>A sweet file uploader from <a href="https://github.com/blueimp/jQuery-File-Upload">blueimp</a> packaged for laravel and integrated into Laravella/CMS.</p>
 <h2 id="screenshots">Screenshots</h2>
@@ -53,11 +54,12 @@
 <li><strong>Run : composer update</strong> (or : php composer.phar update)</li>
 <li>You should have a database server running and a target database created.</li>
 <li><strong>Edit database details</strong> in /app/config/database.php.</li>
-<li><strong>Add providers</strong> in /app/config/app.php : <blockquote>
+<li><strong>Add providers</strong> in /app/config/app.php : (only if you are not using the default laravella starter app)<blockquote>
 <p><code>'providers' =&gt; array(...</code> <br />
 <code>'Laravella\Laravella\LaravellaServiceProvider',</code> <br />
 <code>'Laravella\Crud\CrudServiceProvider',</code> <br />
 <code>'Laravella\CMS\CMSServiceProvider',</code> <br />
+<code>'Laravella\Skins\SkinsServiceProvider',</code> <br />
 <code>'Laravella\Uploader\UploaderServiceProvider')</code></p>
 </blockquote>
 </li>
@@ -66,11 +68,10 @@
 <li>Browse to :<blockquote>
 <p><a href="http://localhost">http://localhost</a> for the frontend <br />
 <a href="http://localhost/db/select/_db_tables">http://localhost/db/select/_db_tables</a> for crud console  <br />
-<a href="http://localhost/db/select/{tablename}">http://localhost/db/select/{tablename}</a> to edit an existing table  <br />
-Default username is <strong>admin@yourwebsite.com</strong> and password is <strong>ravel</strong></p>
+Default username is <strong>superadmin@yourwebsite.com</strong> and password is <strong>ravel</strong></p>
 </blockquote>
 </li>
-<li>Run <code>php artisan crud:install</code> again to regenerate meta data after you've added or altered tables.</li>
+<li>Run <code>php artisan crud:update</code> again to regenerate meta data after you've added or altered tables.</li>
 </ol>
 <h2 id="api-docs">API Docs</h2>
 <ul>
@@ -84,13 +85,15 @@ Default username is <strong>admin@yourwebsite.com</strong> and password is <stro
 <h2 id="license">License</h2>
 <p><a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a></p>
 <h2 id="whats-new">What's new</h2>
-<p>4.1.009 <br />
+<p>4.0.9.20131030 <br />
+Skins package added</p>
+<p>4.0.9.009 <br />
 Ravel replaced with CMS</p>
-<p>4.1.008 <br />
+<p>4.0.9.008 <br />
 File uploader included</p>
-<p>4.1.007 <br />
+<p>4.0.9.007 <br />
 Options and option categories</p>
-<p>4.1.006 <br />
+<p>4.0.9.006 <br />
 dynamic menus</p>
 <!-- /markable.in -->
 
