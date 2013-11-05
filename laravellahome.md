@@ -7,7 +7,7 @@ Github
 -------------------
 + [Project Home](https://github.com/laravella/laravella)
 + [Documentation](http://laravella.github.io/docs/)
-+ [Download](https://github.com/laravella/laravella/archive/master.zip) 
++ [Download](https://github.com/laravella/laravella/releases) 
 + [Issues and Questions](https://github.com/laravella/laravella/issues)
 
 Included
@@ -18,12 +18,6 @@ HTML5 Boiler Plate, Twitter Bootstrap, Font Awesome, SASS, and a quick little lo
 ###laravella/crud
 Database Create, Read, Update, Delete package.  laravella/crud also makes provision for custom views and and AJAX friendly api so that you can basically achieve anything you want with it, above and beyond CRUD.
 
-###laravella/cart
-A demo shopping cart built on laravella/crud (just an example project).
-
-###laravella/package
-A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.
-
 ###laravella/cms
 A content management system and blog built on crud.
 
@@ -32,6 +26,12 @@ An easy way to install new themes.
 
 ###laravella/uploader
 A sweet file uploader from [blueimp](https://github.com/blueimp/jQuery-File-Upload) packaged for laravel and integrated into Laravella/CMS.
+
+###laravella/cart
+A demo shopping cart built on laravella/crud (just an example project).
+
+###laravella/package
+A starter package for laravel. Includes a facade, artisan commands, IoC class, migrations and database seed examples.
 
 <h2 id="screenshots">Screenshots</h2>
 <hr />
@@ -76,17 +76,17 @@ License
 
 What's new
 -------------------
-4.0.9.20131030 <br />
+4.0.20131030 <br />
 Skins package added
 
-4.0.9.009 <br />
+4.0.009 <br />
 Ravel replaced with CMS
 
-4.0.9.008 <br />
+4.0.008 <br />
 File uploader included
 
-4.0.9.007 <br />
+4.0.007 <br />
 Options and option categories
 
-4.0.9.006 <br />
+4.0.006 <br />
 dynamic menus
