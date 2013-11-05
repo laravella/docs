@@ -7,7 +7,7 @@
 	<title>Class Laravella\Crud\CrudServiceProvider | crud</title>
 
 	<script type="text/javascript" src="resources/combined.js?3599222591"></script>
-	<script type="text/javascript" src="elementlist.js?431269642"></script>
+	<script type="text/javascript" src="elementlist.js?1729851014"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -26,10 +26,21 @@
 				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Illuminate.html">Illuminate<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.html">Support<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-Illuminate.Support.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Laravella.html">Laravella<span></span></a>
 						<ul>
 				<li class="active"><a href="namespace-Laravella.Crud.html">Crud<span></span></a>
 						<ul>
+				<li><a href="namespace-Laravella.Crud.Exceptions.html">Exceptions</a>
+						</li>
 				<li><a href="namespace-Laravella.Crud.Facades.html">Facades</a>
 						</li>
 							</ul></li></ul></li>
@@ -46,12 +57,31 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Laravella.Crud.CrudBackupCommand.html">CrudBackupCommand</a></li>
-				<li><a href="class-Laravella.Crud.CrudRestoreCommand.html" class="invalid">CrudRestoreCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudDatabaseSeeder.html">CrudDatabaseSeeder</a></li>
+				<li><a href="class-Laravella.Crud.CrudInstallCommand.html">CrudInstallCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudSeeder.html">CrudSeeder</a></li>
 				<li class="active"><a href="class-Laravella.Crud.CrudServiceProvider.html">CrudServiceProvider</a></li>
+				<li><a href="class-Laravella.Crud.CrudUpdateCommand.html">CrudUpdateCommand</a></li>
 				<li><a href="class-Laravella.Crud.DbGopher.html">DbGopher</a></li>
 				<li><a href="class-Laravella.Crud.Log.html">Log</a></li>
+				<li><a href="class-Laravella.Crud.Options.html">Options</a></li>
 				<li><a href="class-Laravella.Crud.Params.html">Params</a></li>
+				<li><a href="class-Laravella.Crud.PostCrudSeeder.html">PostCrudSeeder</a></li>
+				<li><a href="class-Laravella.Crud.SeedActions.html">SeedActions</a></li>
+				<li><a href="class-Laravella.Crud.SeedAssets.html">SeedAssets</a></li>
+				<li><a href="class-Laravella.Crud.SeedGroups.html">SeedGroups</a></li>
+				<li><a href="class-Laravella.Crud.SeedLogs.html">SeedLogs</a></li>
+				<li><a href="class-Laravella.Crud.SeedMenus.html">SeedMenus</a></li>
+				<li><a href="class-Laravella.Crud.SeedObjects.html">SeedObjects</a></li>
+				<li><a href="class-Laravella.Crud.SeedOptions.html">SeedOptions</a></li>
+				<li><a href="class-Laravella.Crud.SeedPageTypes.html">SeedPageTypes</a></li>
+				<li><a href="class-Laravella.Crud.SeedSeverities.html">SeedSeverities</a></li>
+				<li><a href="class-Laravella.Crud.SeedTables.html">SeedTables</a></li>
+				<li><a href="class-Laravella.Crud.SeedUsergroups.html">SeedUsergroups</a></li>
+				<li><a href="class-Laravella.Crud.SeedUsers.html">SeedUsers</a></li>
+				<li><a href="class-Laravella.Crud.SeedViews.html">SeedViews</a></li>
+				<li><a href="class-Laravella.Crud.UpdateCMSFields.html">UpdateCMSFields</a></li>
+				<li><a href="class-Laravella.Crud.UpdateReferences.html">UpdateReferences</a></li>
 			</ul>
 
 
@@ -100,7 +130,8 @@
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-Illuminate\Support\ServiceProvider
+			<a href="class-Illuminate.Support.ServiceProvider.html"><span>Illuminate\Support\ServiceProvider</span></a>
+			
 			
 			
 		</dd>
@@ -125,7 +156,7 @@ Illuminate\Support\ServiceProvider
 		<b>Namespace:</b> <a href="namespace-Laravella.html">Laravella</a>\<a href="namespace-Laravella.Crud.html">Crud</a><br />
 		
 
-		<b>Located at</b> <a href="source-class-Laravella.Crud.CrudServiceProvider.html#7-94" title="Go to source code">src/Laravella/Crud/CrudServiceProvider.php</a><br />
+		<b>Located at</b> <a href="source-class-Laravella.Crud.CrudServiceProvider.html#6-79" title="Go to source code">src/Laravella/Crud/CrudServiceProvider.php</a><br />
 	</div>
 
 
@@ -143,7 +174,7 @@ Illuminate\Support\ServiceProvider
 
 		<td class="name"><div>
 		<a class="anchor" href="#_boot">#</a>
-		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#16-28" title="Go to source code">boot</a>( )</code>
+		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#15-27" title="Go to source code">boot</a>( )</code>
 
 		<div class="description short">
 			
@@ -161,6 +192,8 @@ Illuminate\Support\ServiceProvider
 
 
 
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Illuminate.Support.ServiceProvider.html#_boot">Illuminate\Support\ServiceProvider::boot()</a></code></div>
 
 		</div>
 		</div></td>
@@ -176,7 +209,7 @@ Illuminate\Support\ServiceProvider
 
 		<td class="name"><div>
 		<a class="anchor" href="#_register">#</a>
-		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#30-48" title="Go to source code">register</a>( )</code>
+		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#29-54" title="Go to source code">register</a>( )</code>
 
 		<div class="description short">
 			
@@ -209,7 +242,7 @@ Illuminate\Support\ServiceProvider
 
 		<td class="name"><div>
 		<a class="anchor" href="#_provides">#</a>
-		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#50-58" title="Go to source code">provides</a>( )</code>
+		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#56-64" title="Go to source code">provides</a>( )</code>
 
 		<div class="description short">
 			
@@ -231,6 +264,8 @@ Illuminate\Support\ServiceProvider
 
 
 
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Illuminate.Support.ServiceProvider.html#_provides">Illuminate\Support\ServiceProvider::provides()</a></code></div>
 
 		</div>
 		</div></td>
@@ -246,7 +281,7 @@ Illuminate\Support\ServiceProvider
 
 		<td class="name"><div>
 		<a class="anchor" href="#_registerCommands">#</a>
-		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#60-76" title="Go to source code">registerCommands</a>( )</code>
+		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#66-76" title="Go to source code">registerCommands</a>( )</code>
 
 		<div class="description short">
 			
@@ -258,64 +293,6 @@ Illuminate\Support\ServiceProvider
 			
 <p>register the custom commands *</p>
 
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="registerCrudBackupCommand" id="_registerCrudBackupCommand">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_registerCrudBackupCommand">#</a>
-		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#78-84" title="Go to source code">registerCrudBackupCommand</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="registerCrudRestoreCommand" id="_registerCrudRestoreCommand">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_registerCrudRestoreCommand">#</a>
-		<code><a href="source-class-Laravella.Crud.CrudServiceProvider.html#86-92" title="Go to source code">registerCrudRestoreCommand</a>( )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
 
 
 
@@ -328,6 +305,21 @@ Illuminate\Support\ServiceProvider
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Illuminate.Support.ServiceProvider.html#methods">Illuminate\Support\ServiceProvider</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Illuminate.Support.ServiceProvider.html#___construct">__construct()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_commands">commands()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_getAppViewPath">getAppViewPath()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_getClassChain">getClassChain()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_getPackageNamespace">getPackageNamespace()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_guessPackagePath">guessPackagePath()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_isDeferred">isDeferred()</a>, 
+			<a href="class-Illuminate.Support.ServiceProvider.html#_package">package()</a>
+		</code></td>
+	</tr>
+	</table>
 
 
 
@@ -348,7 +340,7 @@ Illuminate\Support\ServiceProvider
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Laravella.Crud.CrudServiceProvider.html#9-14" title="Go to source code"><var>$defer</var></a>
+				<a href="source-class-Laravella.Crud.CrudServiceProvider.html#8-13" title="Go to source code"><var>$defer</var></a>
 		</td>
 		<td class="value"><code><span class="php-keyword1">false</span></code></td>
 		<td class="description"><div>
@@ -370,6 +362,14 @@ Illuminate\Support\ServiceProvider
 	</tr>
 	</table>
 
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Illuminate.Support.ServiceProvider.html#properties">Illuminate\Support\ServiceProvider</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Illuminate.Support.ServiceProvider.html#$app"><var>$app</var></a>
+		</code></td>
+	</tr>
+	</table>
 
 
 

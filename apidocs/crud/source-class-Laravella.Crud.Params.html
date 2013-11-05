@@ -8,7 +8,7 @@
 	<title>File src/Laravella/Crud/Params.php | crud</title>
 
 	<script type="text/javascript" src="resources/combined.js?3599222591"></script>
-	<script type="text/javascript" src="elementlist.js?431269642"></script>
+	<script type="text/javascript" src="elementlist.js?1729851014"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
 
 </head>
@@ -27,10 +27,21 @@
 				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
 						</li>
 							</ul></li>
+				<li><a href="namespace-Illuminate.html">Illuminate<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.html">Support<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-Illuminate.Support.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
 				<li class="active"><a href="namespace-Laravella.html">Laravella<span></span></a>
 						<ul>
 				<li class="active"><a href="namespace-Laravella.Crud.html">Crud<span></span></a>
 						<ul>
+				<li><a href="namespace-Laravella.Crud.Exceptions.html">Exceptions</a>
+						</li>
 				<li><a href="namespace-Laravella.Crud.Facades.html">Facades</a>
 						</li>
 							</ul></li></ul></li>
@@ -47,12 +58,31 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Laravella.Crud.CrudBackupCommand.html">CrudBackupCommand</a></li>
-				<li><a href="class-Laravella.Crud.CrudRestoreCommand.html" class="invalid">CrudRestoreCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudDatabaseSeeder.html">CrudDatabaseSeeder</a></li>
+				<li><a href="class-Laravella.Crud.CrudInstallCommand.html">CrudInstallCommand</a></li>
+				<li><a href="class-Laravella.Crud.CrudSeeder.html">CrudSeeder</a></li>
 				<li><a href="class-Laravella.Crud.CrudServiceProvider.html">CrudServiceProvider</a></li>
+				<li><a href="class-Laravella.Crud.CrudUpdateCommand.html">CrudUpdateCommand</a></li>
 				<li><a href="class-Laravella.Crud.DbGopher.html">DbGopher</a></li>
 				<li><a href="class-Laravella.Crud.Log.html">Log</a></li>
+				<li><a href="class-Laravella.Crud.Options.html">Options</a></li>
 				<li class="active"><a href="class-Laravella.Crud.Params.html">Params</a></li>
+				<li><a href="class-Laravella.Crud.PostCrudSeeder.html">PostCrudSeeder</a></li>
+				<li><a href="class-Laravella.Crud.SeedActions.html">SeedActions</a></li>
+				<li><a href="class-Laravella.Crud.SeedAssets.html">SeedAssets</a></li>
+				<li><a href="class-Laravella.Crud.SeedGroups.html">SeedGroups</a></li>
+				<li><a href="class-Laravella.Crud.SeedLogs.html">SeedLogs</a></li>
+				<li><a href="class-Laravella.Crud.SeedMenus.html">SeedMenus</a></li>
+				<li><a href="class-Laravella.Crud.SeedObjects.html">SeedObjects</a></li>
+				<li><a href="class-Laravella.Crud.SeedOptions.html">SeedOptions</a></li>
+				<li><a href="class-Laravella.Crud.SeedPageTypes.html">SeedPageTypes</a></li>
+				<li><a href="class-Laravella.Crud.SeedSeverities.html">SeedSeverities</a></li>
+				<li><a href="class-Laravella.Crud.SeedTables.html">SeedTables</a></li>
+				<li><a href="class-Laravella.Crud.SeedUsergroups.html">SeedUsergroups</a></li>
+				<li><a href="class-Laravella.Crud.SeedUsers.html">SeedUsers</a></li>
+				<li><a href="class-Laravella.Crud.SeedViews.html">SeedViews</a></li>
+				<li><a href="class-Laravella.Crud.UpdateCMSFields.html">UpdateCMSFields</a></li>
+				<li><a href="class-Laravella.Crud.UpdateReferences.html">UpdateReferences</a></li>
 			</ul>
 
 
@@ -95,139 +125,277 @@
 		</ul>
 	</div>
 
-<pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
+<pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span> <span class="php-keyword1">namespace</span> Laravella\Crud;
 </span><span id="2" class="l"><a class="l" href="#2">  2: </a>
-</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-keyword1">namespace</span> Laravella\Crud;
-</span><span id="4" class="l"><a class="l" href="#4">  4: </a>
-</span><span id="5" class="l"><a class="l" href="#5">  5: </a><span class="php-keyword1">class</span> <a id="Params" href="#Params">Params</a> {
-</span><span id="6" class="l"><a class="l" href="#6">  6: </a>
-</span><span id="7" class="l"><a class="l" href="#7">  7: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$action" href="#$action">$action</a></span> = <span class="php-quote">&quot;&quot;</span>;
-</span><span id="8" class="l"><a class="l" href="#8">  8: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tableMeta" href="#$tableMeta">$tableMeta</a></span> = <span class="php-keyword1">null</span>;
-</span><span id="9" class="l"><a class="l" href="#9">  9: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tables" href="#$tables">$tables</a></span> = <span class="php-keyword1">null</span>;
-</span><span id="10" class="l"><a class="l" href="#10"> 10: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$dataA" href="#$dataA">$dataA</a></span> = <span class="php-keyword1">array</span>();
-</span><span id="11" class="l"><a class="l" href="#11"> 11: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$paginated" href="#$paginated">$paginated</a></span> = <span class="php-keyword1">null</span>;
-</span><span id="12" class="l"><a class="l" href="#12"> 12: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$primaryTables" href="#$primaryTables">$primaryTables</a></span> = <span class="php-keyword1">array</span>();
-</span><span id="13" class="l"><a class="l" href="#13"> 13: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$prefix" href="#$prefix">$prefix</a></span> = <span class="php-quote">&quot;&quot;</span>;
-</span><span id="14" class="l"><a class="l" href="#14"> 14: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tableActionViews" href="#$tableActionViews">$tableActionViews</a></span> = <span class="php-keyword1">null</span>;
-</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$view" href="#$view">$view</a></span> = <span class="php-keyword1">null</span>;
-</span><span id="16" class="l"><a class="l" href="#16"> 16: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$selects" href="#$selects">$selects</a></span> = <span class="php-keyword1">array</span>();
-</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$log" href="#$log">$log</a></span> = <span class="php-keyword1">array</span>();
-</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$status" href="#$status">$status</a></span> = <span class="php-quote">&quot;success&quot;</span>;
-</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$displayType" href="#$displayType">$displayType</a></span> = <span class="php-quote">&quot;text/html&quot;</span>;
-</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>
-</span><span id="21" class="l"><a class="l" href="#21"> 21: </a>    <span class="php-comment">/**
-</span></span><span id="22" class="l"><a class="l" href="#22"> 22: </a><span class="php-comment">     * 
-</span></span><span id="23" class="l"><a class="l" href="#23"> 23: </a><span class="php-comment">     * Used to pass a consistent set of data to views and prevent &quot;$variable not found&quot; errors.
-</span></span><span id="24" class="l"><a class="l" href="#24"> 24: </a><span class="php-comment">     * 
-</span></span><span id="25" class="l"><a class="l" href="#25"> 25: </a><span class="php-comment">     * @param type $status Wether the action succeeded or not.  See log for further details.
-</span></span><span id="26" class="l"><a class="l" href="#26"> 26: </a><span class="php-comment">     * @param type $action the action that controller is performing. See _db_actions.name 
-</span></span><span id="27" class="l"><a class="l" href="#27"> 27: </a><span class="php-comment">     * @param type $tableMeta The table's meta data. As generated by Laravella\Crud\Table::getTableMeta()
-</span></span><span id="28" class="l"><a class="l" href="#28"> 28: </a><span class="php-comment">     * @param type $tables Is an array of Table objects. Actual data.
-</span></span><span id="29" class="l"><a class="l" href="#29"> 29: </a><span class="php-comment">     * @param type $pageSize. The size of the pagination.
-</span></span><span id="30" class="l"><a class="l" href="#30"> 30: </a><span class="php-comment">     * @param type $primaryTables A list of records with primary keys related to this table's via foreign keys.
-</span></span><span id="31" class="l"><a class="l" href="#31"> 31: </a><span class="php-comment">     * @param type $prefix Used to prepend the href on the primary key
-</span></span><span id="32" class="l"><a class="l" href="#32"> 32: </a><span class="php-comment">     * @param type $view An entry in _db_views
-</span></span><span id="33" class="l"><a class="l" href="#33"> 33: </a><span class="php-comment">     */</span>
-</span><span id="34" class="l"><a class="l" href="#34"> 34: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>(<span class="php-var">$status</span>, <span class="php-var">$message</span>, <span class="php-var">$log</span>, <span class="php-var">$view</span> = <span class="php-keyword1">null</span>, <span class="php-var">$action</span> = <span class="php-quote">&quot;&quot;</span>, 
-</span><span id="35" class="l"><a class="l" href="#35"> 35: </a>            <span class="php-var">$tableMeta</span> = <span class="php-keyword1">null</span>, <span class="php-var">$tableActionViews</span> = <span class="php-keyword1">null</span>, <span class="php-var">$prefix</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$selects</span> = <span class="php-keyword1">null</span>, <span class="php-var">$displayType</span> = <span class="php-quote">&quot;&quot;</span>,
-</span><span id="36" class="l"><a class="l" href="#36"> 36: </a>            <span class="php-var">$dataA</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$tables</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$paginated</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$primaryTables</span> = <span class="php-keyword1">array</span>())
-</span><span id="37" class="l"><a class="l" href="#37"> 37: </a>    {
-</span><span id="38" class="l"><a class="l" href="#38"> 38: </a>        <span class="php-var">$this</span>-&gt;status = <span class="php-var">$status</span>;
-</span><span id="39" class="l"><a class="l" href="#39"> 39: </a>        <span class="php-var">$this</span>-&gt;message = <span class="php-var">$message</span>;
-</span><span id="40" class="l"><a class="l" href="#40"> 40: </a>        <span class="php-var">$this</span>-&gt;action = <span class="php-var">$action</span>;
-</span><span id="41" class="l"><a class="l" href="#41"> 41: </a>        <span class="php-var">$this</span>-&gt;tableMeta = <span class="php-var">$tableMeta</span>;
-</span><span id="42" class="l"><a class="l" href="#42"> 42: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_object</span>(<span class="php-var">$view</span>)) {
-</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>            <span class="php-var">$this</span>-&gt;pageSize = <span class="php-var">$view</span>-&gt;page_size;
-</span><span id="44" class="l"><a class="l" href="#44"> 44: </a>        } <span class="php-keyword1">else</span> {
-</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>            <span class="php-var">$this</span>-&gt;pageSize = <span class="php-num">10</span>;
-</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>        }
-</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>        <span class="php-var">$this</span>-&gt;prefix = <span class="php-var">$prefix</span>;
-</span><span id="48" class="l"><a class="l" href="#48"> 48: </a>        <span class="php-var">$this</span>-&gt;tableActionViews = <span class="php-var">$tableActionViews</span>;
-</span><span id="49" class="l"><a class="l" href="#49"> 49: </a>        <span class="php-var">$this</span>-&gt;view = <span class="php-var">$view</span>;
-</span><span id="50" class="l"><a class="l" href="#50"> 50: </a>        <span class="php-var">$this</span>-&gt;selects = <span class="php-var">$selects</span>;
-</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>        <span class="php-var">$this</span>-&gt;displayType = <span class="php-var">$displayType</span>;
-</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">log</span> = <span class="php-var">$log</span>;
-</span><span id="53" class="l"><a class="l" href="#53"> 53: </a>        <span class="php-comment">//potentially null</span>
-</span><span id="54" class="l"><a class="l" href="#54"> 54: </a>        <span class="php-var">$this</span>-&gt;paginated = <span class="php-var">$paginated</span>;
-</span><span id="55" class="l"><a class="l" href="#55"> 55: </a>        <span class="php-var">$this</span>-&gt;tables = <span class="php-var">$tables</span>;
-</span><span id="56" class="l"><a class="l" href="#56"> 56: </a>        <span class="php-var">$this</span>-&gt;primaryTables = <span class="php-var">$primaryTables</span>;
-</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>        <span class="php-var">$this</span>-&gt;dataA = <span class="php-var">$dataA</span>;
-</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>    }
-</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>
-</span><span id="60" class="l"><a class="l" href="#60"> 60: </a>    <span class="php-comment">/**
-</span></span><span id="61" class="l"><a class="l" href="#61"> 61: </a><span class="php-comment">     * For Edit
-</span></span><span id="62" class="l"><a class="l" href="#62"> 62: </a><span class="php-comment">     * 
-</span></span><span id="63" class="l"><a class="l" href="#63"> 63: </a><span class="php-comment">     * @param type $status
-</span></span><span id="64" class="l"><a class="l" href="#64"> 64: </a><span class="php-comment">     * @param type $message
-</span></span><span id="65" class="l"><a class="l" href="#65"> 65: </a><span class="php-comment">     * @param type $log
-</span></span><span id="66" class="l"><a class="l" href="#66"> 66: </a><span class="php-comment">     * @param type $view
-</span></span><span id="67" class="l"><a class="l" href="#67"> 67: </a><span class="php-comment">     * @param type $action
-</span></span><span id="68" class="l"><a class="l" href="#68"> 68: </a><span class="php-comment">     * @param type $tableMeta
-</span></span><span id="69" class="l"><a class="l" href="#69"> 69: </a><span class="php-comment">     * @param type $tableActionViews
-</span></span><span id="70" class="l"><a class="l" href="#70"> 70: </a><span class="php-comment">     * @param type $prefix
-</span></span><span id="71" class="l"><a class="l" href="#71"> 71: </a><span class="php-comment">     * @param type $selects
-</span></span><span id="72" class="l"><a class="l" href="#72"> 72: </a><span class="php-comment">     * @param type $tables
-</span></span><span id="73" class="l"><a class="l" href="#73"> 73: </a><span class="php-comment">     * @param type $paginated
-</span></span><span id="74" class="l"><a class="l" href="#74"> 74: </a><span class="php-comment">     * @param type $primaryTables
-</span></span><span id="75" class="l"><a class="l" href="#75"> 75: </a><span class="php-comment">     * @return \Laravella\Crud\Params
-</span></span><span id="76" class="l"><a class="l" href="#76"> 76: </a><span class="php-comment">     */</span>
-</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_forEdit" href="#_forEdit">forEdit</a>(<span class="php-var">$status</span>, <span class="php-var">$message</span>, <span class="php-var">$log</span>, <span class="php-var">$view</span> = <span class="php-keyword1">null</span>, 
-</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>            <span class="php-var">$action</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$tableMeta</span> = <span class="php-keyword1">null</span>, <span class="php-var">$tableActionViews</span> = <span class="php-keyword1">null</span>, 
-</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>            <span class="php-var">$prefix</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$selects</span> = <span class="php-keyword1">null</span>, <span class="php-var">$displayType</span>=<span class="php-quote">&quot;text/html&quot;</span>,
-</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>            <span class="php-var">$tables</span> = <span class="php-keyword1">null</span>, <span class="php-var">$paginated</span> = <span class="php-keyword1">null</span>, <span class="php-var">$primaryTables</span> = <span class="php-keyword1">null</span>)
-</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>    {
-</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>        <span class="php-var">$params</span> = <span class="php-keyword1">new</span> Params();
-</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>        <span class="php-keyword1">return</span> <span class="php-var">$params</span>;
-</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>    }
-</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>
-</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>    <span class="php-comment">/*
-</span></span><span id="87" class="l"><a class="l" href="#87"> 87: </a><span class="php-comment">     * meta
-</span></span><span id="88" class="l"><a class="l" href="#88"> 88: </a><span class="php-comment">     * data
-</span></span><span id="89" class="l"><a class="l" href="#89"> 89: </a><span class="php-comment">     * name
-</span></span><span id="90" class="l"><a class="l" href="#90"> 90: </a><span class="php-comment">     * pagesize
-</span></span><span id="91" class="l"><a class="l" href="#91"> 91: </a><span class="php-comment">     * selects
-</span></span><span id="92" class="l"><a class="l" href="#92"> 92: </a><span class="php-comment">     */</span>
-</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>
-</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_asArray" href="#_asArray">asArray</a>()
-</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>    {
-</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>
-</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>        <span class="php-var">$returnA</span> = <span class="php-keyword1">array</span>(<span class="php-quote">&quot;action&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;action,
-</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>            <span class="php-quote">&quot;meta&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tableMeta[<span class="php-quote">'fields_array'</span>],
-</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>            <span class="php-quote">&quot;tableName&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tableMeta[<span class="php-quote">'table'</span>][<span class="php-quote">'name'</span>],
-</span><span id="100" class="l"><a class="l" href="#100">100: </a>            <span class="php-quote">&quot;prefix&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;prefix,
-</span><span id="101" class="l"><a class="l" href="#101">101: </a>            <span class="php-quote">&quot;pageSize&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;pageSize,
-</span><span id="102" class="l"><a class="l" href="#102">102: </a>            <span class="php-quote">&quot;view&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;view,
-</span><span id="103" class="l"><a class="l" href="#103">103: </a>            <span class="php-quote">&quot;selects&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;selects,
-</span><span id="104" class="l"><a class="l" href="#104">104: </a>            <span class="php-quote">&quot;log&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;<span class="php-keyword2">log</span>,
-</span><span id="105" class="l"><a class="l" href="#105">105: </a>            <span class="php-quote">&quot;status&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;status,
-</span><span id="106" class="l"><a class="l" href="#106">106: </a>            <span class="php-quote">&quot;message&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;message,
-</span><span id="107" class="l"><a class="l" href="#107">107: </a>            <span class="php-quote">&quot;pkName&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tableMeta[<span class="php-quote">'table'</span>][<span class="php-quote">'pk_name'</span>],
-</span><span id="108" class="l"><a class="l" href="#108">108: </a>            <span class="php-quote">&quot;displayType&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;displayType,
-</span><span id="109" class="l"><a class="l" href="#109">109: </a>            
-</span><span id="110" class="l"><a class="l" href="#110">110: </a>            <span class="php-quote">&quot;tables&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tables,
-</span><span id="111" class="l"><a class="l" href="#111">111: </a>            <span class="php-quote">&quot;data&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;paginated,
-</span><span id="112" class="l"><a class="l" href="#112">112: </a>            <span class="php-quote">&quot;dataA&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;dataA,
-</span><span id="113" class="l"><a class="l" href="#113">113: </a>            <span class="php-quote">&quot;pkTables&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;primaryTables
-</span><span id="114" class="l"><a class="l" href="#114">114: </a>            ); <span class="php-comment">//$this-&gt;tables[$tableName]['tableMetaData']['table']['pk_name']);</span>
-</span><span id="115" class="l"><a class="l" href="#115">115: </a>        
-</span><span id="116" class="l"><a class="l" href="#116">116: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;tableActionViews) &amp;&amp; <span class="php-keyword2">is_object</span>(<span class="php-var">$this</span>-&gt;tableActionViews))
-</span><span id="117" class="l"><a class="l" href="#117">117: </a>        {
-</span><span id="118" class="l"><a class="l" href="#118">118: </a>            <span class="php-var">$returnA</span>[<span class="php-quote">&quot;title&quot;</span>] = <span class="php-var">$this</span>-&gt;tableActionViews-&gt;title;
-</span><span id="119" class="l"><a class="l" href="#119">119: </a>        }
-</span><span id="120" class="l"><a class="l" href="#120">120: </a>        <span class="php-keyword1">else</span>
-</span><span id="121" class="l"><a class="l" href="#121">121: </a>        {
-</span><span id="122" class="l"><a class="l" href="#122">122: </a>            <span class="php-var">$returnA</span>[<span class="php-quote">&quot;title&quot;</span>] = <span class="php-quote">&quot;&quot;</span>;
-</span><span id="123" class="l"><a class="l" href="#123">123: </a>        }
-</span><span id="124" class="l"><a class="l" href="#124">124: </a>
-</span><span id="125" class="l"><a class="l" href="#125">125: </a>        <span class="php-var">$returnA</span>[<span class="php-quote">'params'</span>] = <span class="php-keyword2">json_encode</span>(<span class="php-var">$returnA</span>);
-</span><span id="126" class="l"><a class="l" href="#126">126: </a>
-</span><span id="127" class="l"><a class="l" href="#127">127: </a>        <span class="php-keyword1">return</span> <span class="php-var">$returnA</span>;
-</span><span id="128" class="l"><a class="l" href="#128">128: </a>    }
-</span><span id="129" class="l"><a class="l" href="#129">129: </a>
-</span><span id="130" class="l"><a class="l" href="#130">130: </a>}
-</span><span id="131" class="l"><a class="l" href="#131">131: </a>
-</span><span id="132" class="l"><a class="l" href="#132">132: </a><span class="xlang">?&gt;</span>
-</span><span id="133" class="l"><a class="l" href="#133">133: </a></span></code></pre>
+</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-keyword1">use</span> Illuminate\Support\Facades\Auth;
+</span><span id="4" class="l"><a class="l" href="#4">  4: </a><span class="php-keyword1">use</span> Illuminate\Support\Facades\DB;
+</span><span id="5" class="l"><a class="l" href="#5">  5: </a>
+</span><span id="6" class="l"><a class="l" href="#6">  6: </a><span class="php-comment">/**
+</span></span><span id="7" class="l"><a class="l" href="#7">  7: </a><span class="php-comment"> * 
+</span></span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-comment"> * Used to pass a consistent set of data to views and prevent &quot;$variable not found&quot; errors.
+</span></span><span id="9" class="l"><a class="l" href="#9">  9: </a><span class="php-comment"> * 
+</span></span><span id="10" class="l"><a class="l" href="#10"> 10: </a><span class="php-comment"> */</span>
+</span><span id="11" class="l"><a class="l" href="#11"> 11: </a><span class="php-keyword1">class</span> <a id="Params" href="#Params">Params</a> <span class="php-keyword1">extends</span> CrudSeeder {
+</span><span id="12" class="l"><a class="l" href="#12"> 12: </a>
+</span><span id="13" class="l"><a class="l" href="#13"> 13: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$action" href="#$action">$action</a></span> = <span class="php-quote">&quot;&quot;</span>;
+</span><span id="14" class="l"><a class="l" href="#14"> 14: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tableMeta" href="#$tableMeta">$tableMeta</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tables" href="#$tables">$tables</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="16" class="l"><a class="l" href="#16"> 16: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$dataA" href="#$dataA">$dataA</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$paginated" href="#$paginated">$paginated</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$primaryTables" href="#$primaryTables">$primaryTables</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$prefix" href="#$prefix">$prefix</a></span> = <span class="php-quote">&quot;&quot;</span>;
+</span><span id="20" class="l"><a class="l" href="#20"> 20: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$tableActionViews" href="#$tableActionViews">$tableActionViews</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="21" class="l"><a class="l" href="#21"> 21: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$assets" href="#$assets">$assets</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="22" class="l"><a class="l" href="#22"> 22: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$view" href="#$view">$view</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="23" class="l"><a class="l" href="#23"> 23: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$skin" href="#$skin">$skin</a></span> = <span class="php-keyword1">null</span>;
+</span><span id="24" class="l"><a class="l" href="#24"> 24: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$selects" href="#$selects">$selects</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="25" class="l"><a class="l" href="#25"> 25: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$log" href="#$log">$log</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="26" class="l"><a class="l" href="#26"> 26: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$status" href="#$status">$status</a></span> = <span class="php-quote">&quot;success&quot;</span>;
+</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$slug" href="#$slug">$slug</a></span> = <span class="php-quote">&quot;&quot;</span>;
+</span><span id="28" class="l"><a class="l" href="#28"> 28: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$displayType" href="#$displayType">$displayType</a></span> = <span class="php-quote">&quot;text/html&quot;</span>;
+</span><span id="29" class="l"><a class="l" href="#29"> 29: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$displayTypes" href="#$displayTypes">$displayTypes</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="30" class="l"><a class="l" href="#30"> 30: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$widgetTypes" href="#$widgetTypes">$widgetTypes</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$menu" href="#$menu">$menu</a></span> = <span class="php-keyword1">array</span>();
+</span><span id="32" class="l"><a class="l" href="#32"> 32: </a>
+</span><span id="33" class="l"><a class="l" href="#33"> 33: </a>    <span class="php-comment">/**
+</span></span><span id="34" class="l"><a class="l" href="#34"> 34: </a><span class="php-comment">     * 
+</span></span><span id="35" class="l"><a class="l" href="#35"> 35: </a><span class="php-comment">     * Used to pass a consistent set of data to views and prevent &quot;$variable not found&quot; errors.
+</span></span><span id="36" class="l"><a class="l" href="#36"> 36: </a><span class="php-comment">     * 
+</span></span><span id="37" class="l"><a class="l" href="#37"> 37: </a><span class="php-comment">     * @param type $status Wether the action succeeded or not.  See log for further details.
+</span></span><span id="38" class="l"><a class="l" href="#38"> 38: </a><span class="php-comment">     * @param type $action the action that controller is performing. See _db_actions.name 
+</span></span><span id="39" class="l"><a class="l" href="#39"> 39: </a><span class="php-comment">     * @param type $tableMeta The table's meta data. As generated by Laravella\Crud\Table::getTableMeta()
+</span></span><span id="40" class="l"><a class="l" href="#40"> 40: </a><span class="php-comment">     * @param type $tables Is an array of Table objects. Actual data.
+</span></span><span id="41" class="l"><a class="l" href="#41"> 41: </a><span class="php-comment">     * @param type $pageSize. The size of the pagination.
+</span></span><span id="42" class="l"><a class="l" href="#42"> 42: </a><span class="php-comment">     * @param type $primaryTables A list of records with primary keys related to this table's via foreign keys.
+</span></span><span id="43" class="l"><a class="l" href="#43"> 43: </a><span class="php-comment">     * @param type $prefix Used to prepend the href on the primary key
+</span></span><span id="44" class="l"><a class="l" href="#44"> 44: </a><span class="php-comment">     * @param type $view An entry in _db_views
+</span></span><span id="45" class="l"><a class="l" href="#45"> 45: </a><span class="php-comment">     */</span>
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>(<span class="php-var">$status</span>, <span class="php-var">$message</span>, <span class="php-var">$log</span>, <span class="php-var">$view</span> = <span class="php-keyword1">null</span>, <span class="php-var">$action</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$tableMeta</span> = <span class="php-keyword1">null</span>, <span class="php-var">$tableActionViews</span> = <span class="php-keyword1">null</span>, <span class="php-var">$prefix</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$selects</span> = <span class="php-keyword1">null</span>, <span class="php-var">$displayType</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$dataA</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$tables</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$paginated</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$primaryTables</span> = <span class="php-keyword1">array</span>())
+</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>    {
+</span><span id="48" class="l"><a class="l" href="#48"> 48: </a>        <span class="php-var">$this</span>-&gt;status = <span class="php-var">$status</span>;
+</span><span id="49" class="l"><a class="l" href="#49"> 49: </a>        <span class="php-var">$this</span>-&gt;message = <span class="php-var">$message</span>;
+</span><span id="50" class="l"><a class="l" href="#50"> 50: </a>        <span class="php-var">$this</span>-&gt;action = <span class="php-var">$action</span>;
+</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>        <span class="php-var">$this</span>-&gt;tableMeta = <span class="php-var">$tableMeta</span>;
+</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_object</span>(<span class="php-var">$view</span>))
+</span><span id="53" class="l"><a class="l" href="#53"> 53: </a>        {
+</span><span id="54" class="l"><a class="l" href="#54"> 54: </a>            <span class="php-var">$this</span>-&gt;pageSize = <span class="php-var">$view</span>-&gt;page_size;
+</span><span id="55" class="l"><a class="l" href="#55"> 55: </a>        }
+</span><span id="56" class="l"><a class="l" href="#56"> 56: </a>        <span class="php-keyword1">else</span>
+</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>        {
+</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>            <span class="php-var">$this</span>-&gt;pageSize = <span class="php-num">10</span>;
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>        }
+</span><span id="60" class="l"><a class="l" href="#60"> 60: </a>        <span class="php-var">$this</span>-&gt;prefix = <span class="php-var">$prefix</span>;
+</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>        <span class="php-var">$this</span>-&gt;tableActionViews = <span class="php-var">$tableActionViews</span>;  <span class="php-comment">//single, called by first()</span>
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>        <span class="php-var">$this</span>-&gt;view = <span class="php-var">$view</span>;
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>        <span class="php-var">$this</span>-&gt;skin = <span class="php-keyword1">array</span>(<span class="php-quote">'admin'</span>=&gt;Options::get(<span class="php-quote">'skin'</span>, <span class="php-quote">'admin'</span>), <span class="php-quote">'frontend'</span>=&gt;Options::get(<span class="php-quote">'skin'</span>, <span class="php-quote">'frontend'</span>));
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>        <span class="php-var">$this</span>-&gt;selects = <span class="php-var">$selects</span>;
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>        <span class="php-var">$this</span>-&gt;displayType = <span class="php-var">$displayType</span>;
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">log</span> = <span class="php-var">$log</span>;
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>        <span class="php-comment">//potentially null</span>
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>        <span class="php-var">$this</span>-&gt;paginated = <span class="php-var">$paginated</span>;
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>        <span class="php-var">$this</span>-&gt;tables = <span class="php-var">$tables</span>;
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>        <span class="php-var">$this</span>-&gt;primaryTables = <span class="php-var">$primaryTables</span>;
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>        <span class="php-var">$this</span>-&gt;assets = <span class="php-var">$this</span>-&gt;__getAssets();
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>        <span class="php-var">$this</span>-&gt;dataA = <span class="php-var">$dataA</span>;
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        <span class="php-var">$this</span>-&gt;displayTypes = <span class="php-var">$this</span>-&gt;__getDisplayTypes();
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>        <span class="php-var">$this</span>-&gt;widgetTypes = <span class="php-var">$this</span>-&gt;__getWidgetTypes();
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>        <span class="php-keyword1">if</span> (Auth::check())
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>        {
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>            <span class="php-var">$userId</span> = Auth::user()-&gt;id;
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>            <span class="php-var">$this</span>-&gt;menu = <span class="php-var">$this</span>-&gt;getMenu(<span class="php-var">$userId</span>);
+</span><span id="80" class="l"><a class="l" href="#80"> 80: </a>        }
+</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>    }
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>    <span class="php-comment">/**
+</span></span><span id="84" class="l"><a class="l" href="#84"> 84: </a><span class="php-comment">     * 
+</span></span><span id="85" class="l"><a class="l" href="#85"> 85: </a><span class="php-comment">     */</span>
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="___getAssets" href="#___getAssets">__getAssets</a>() {
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>        <span class="php-var">$assetsA</span> = <span class="php-keyword1">array</span>();
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;tableActionViews) &amp;&amp; <span class="php-keyword2">is_object</span>(<span class="php-var">$this</span>-&gt;tableActionViews))
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>        {
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>            <span class="php-var">$assetType</span> = <span class="php-quote">'default'</span>;
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>            <span class="php-var">$assets</span> = DB::table(<span class="php-quote">'_db_page_assets as pa'</span>)
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>            -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_option_types as pot'</span>, <span class="php-quote">'pot.id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'pa.page_type_id'</span>)
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>            -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_option_types as aot'</span>, <span class="php-quote">'aot.id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'pa.asset_type_id'</span>)
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>            -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_assets as a'</span>, <span class="php-quote">'a.asset_type_id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'pa.asset_type_id'</span>)
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>            -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_pages as p'</span>, <span class="php-quote">'p.page_type_id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'pa.page_type_id'</span>)
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>            -&gt;select(<span class="php-quote">'pa.id'</span>, <span class="php-quote">'pa.page_type_id'</span>, <span class="php-quote">'pa.asset_type_id'</span>, <span class="php-quote">'a.id'</span>, 
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>            <span class="php-quote">'p.id'</span>, <span class="php-quote">'aot.name'</span>, <span class="php-quote">'pot.name'</span>, <span class="php-quote">'a.url'</span>, <span class="php-quote">'a.vendor'</span>, <span class="php-quote">'a.type'</span>, <span class="php-quote">'a.version'</span>, 
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>            <span class="php-quote">'a.position'</span>, <span class="php-quote">'p.action_id'</span>, <span class="php-quote">'p.view_id'</span>, <span class="php-quote">'p.object_id'</span>, <span class="php-quote">'p.page_size'</span>, 
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>                    <span class="php-quote">'p.title'</span>, <span class="php-quote">'p.slug'</span>)
+</span><span id="101" class="l"><a class="l" href="#101">101: </a><span class="php-comment">//            -&gt;where('pa.page_type_id', $this-&gt;tableActionViews-&gt;page_type_id)</span>
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>            -&gt;where(<span class="php-quote">'pot.name'</span>, <span class="php-var">$this</span>-&gt;tableActionViews-&gt;view_name)
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>            -&gt;where(<span class="php-quote">'p.slug'</span>, <span class="php-quote">'_db_actions_getselect'</span>)
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>            -&gt;get();
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>            
+</span><span id="106" class="l"><a class="l" href="#106">106: </a><span class="php-comment">//            $queries = DB::getQueryLog();</span>
+</span><span id="107" class="l"><a class="l" href="#107">107: </a><span class="php-comment">//            $last_query = end($queries);</span>
+</span><span id="108" class="l"><a class="l" href="#108">108: </a><span class="php-comment">//            echo var_dump($last_query);</span>
+</span><span id="109" class="l"><a class="l" href="#109">109: </a><span class="php-comment">//            die;</span>
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>            
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>            <span class="php-keyword1">foreach</span>(<span class="php-var">$assets</span> <span class="php-keyword1">as</span> <span class="php-var">$asset</span>) {
+</span><span id="112" class="l"><a class="l" href="#112">112: </a>                <span class="php-var">$assetsA</span>[] = <span class="php-keyword1">array</span>(<span class="php-quote">'url'</span>=&gt;<span class="php-var">$asset</span>-&gt;type.<span class="php-quote">&quot;/&quot;</span>.<span class="php-var">$asset</span>-&gt;url, <span class="php-quote">'type'</span>=&gt;<span class="php-var">$asset</span>-&gt;type, <span class="php-quote">'position'</span>=&gt;<span class="php-var">$asset</span>-&gt;position);
+</span><span id="113" class="l"><a class="l" href="#113">113: </a>            }
+</span><span id="114" class="l"><a class="l" href="#114">114: </a>        }
+</span><span id="115" class="l"><a class="l" href="#115">115: </a>
+</span><span id="116" class="l"><a class="l" href="#116">116: </a>        <span class="php-keyword1">return</span> <span class="php-var">$assetsA</span>;
+</span><span id="117" class="l"><a class="l" href="#117">117: </a>    }
+</span><span id="118" class="l"><a class="l" href="#118">118: </a>    
+</span><span id="119" class="l"><a class="l" href="#119">119: </a>    <span class="php-comment">/**
+</span></span><span id="120" class="l"><a class="l" href="#120">120: </a><span class="php-comment">     * get all entries from _db_display_types
+</span></span><span id="121" class="l"><a class="l" href="#121">121: </a><span class="php-comment">     * This determines under which conditions a field will be displayed
+</span></span><span id="122" class="l"><a class="l" href="#122">122: </a><span class="php-comment">     * 
+</span></span><span id="123" class="l"><a class="l" href="#123">123: </a><span class="php-comment">     * @return type
+</span></span><span id="124" class="l"><a class="l" href="#124">124: </a><span class="php-comment">     */</span>
+</span><span id="125" class="l"><a class="l" href="#125">125: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="___getDisplayTypes" href="#___getDisplayTypes">__getDisplayTypes</a>() {
+</span><span id="126" class="l"><a class="l" href="#126">126: </a>        <span class="php-var">$displayTypes</span> = DB::table(<span class="php-quote">'_db_display_types'</span>)-&gt;get();
+</span><span id="127" class="l"><a class="l" href="#127">127: </a>        <span class="php-var">$dtA</span> = <span class="php-keyword1">array</span>();
+</span><span id="128" class="l"><a class="l" href="#128">128: </a>        <span class="php-keyword1">foreach</span>(<span class="php-var">$displayTypes</span> <span class="php-keyword1">as</span> <span class="php-var">$displayType</span>) {
+</span><span id="129" class="l"><a class="l" href="#129">129: </a>            <span class="php-var">$dtA</span>[<span class="php-var">$displayType</span>-&gt;id] = <span class="php-var">$displayType</span>-&gt;name;
+</span><span id="130" class="l"><a class="l" href="#130">130: </a>        }
+</span><span id="131" class="l"><a class="l" href="#131">131: </a>        <span class="php-keyword1">return</span> <span class="php-var">$dtA</span>;
+</span><span id="132" class="l"><a class="l" href="#132">132: </a>    }
+</span><span id="133" class="l"><a class="l" href="#133">133: </a>    
+</span><span id="134" class="l"><a class="l" href="#134">134: </a>    <span class="php-comment">/**
+</span></span><span id="135" class="l"><a class="l" href="#135">135: </a><span class="php-comment">     * get all entries from _db_widget_types
+</span></span><span id="136" class="l"><a class="l" href="#136">136: </a><span class="php-comment">     * This determines how a field will be displayed, what it will look like
+</span></span><span id="137" class="l"><a class="l" href="#137">137: </a><span class="php-comment">     * 
+</span></span><span id="138" class="l"><a class="l" href="#138">138: </a><span class="php-comment">     * @return type
+</span></span><span id="139" class="l"><a class="l" href="#139">139: </a><span class="php-comment">     */</span>
+</span><span id="140" class="l"><a class="l" href="#140">140: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="___getWidgetTypes" href="#___getWidgetTypes">__getWidgetTypes</a>() {
+</span><span id="141" class="l"><a class="l" href="#141">141: </a>        <span class="php-var">$widgetTypes</span> = DB::table(<span class="php-quote">'_db_widget_types'</span>)-&gt;get();
+</span><span id="142" class="l"><a class="l" href="#142">142: </a>        <span class="php-var">$dtA</span> = <span class="php-keyword1">array</span>();
+</span><span id="143" class="l"><a class="l" href="#143">143: </a>        <span class="php-keyword1">foreach</span>(<span class="php-var">$widgetTypes</span> <span class="php-keyword1">as</span> <span class="php-var">$widgetType</span>) {
+</span><span id="144" class="l"><a class="l" href="#144">144: </a>            <span class="php-var">$dtA</span>[<span class="php-var">$widgetType</span>-&gt;id] = <span class="php-var">$widgetType</span>-&gt;name;
+</span><span id="145" class="l"><a class="l" href="#145">145: </a>        }
+</span><span id="146" class="l"><a class="l" href="#146">146: </a>        <span class="php-keyword1">return</span> <span class="php-var">$dtA</span>;
+</span><span id="147" class="l"><a class="l" href="#147">147: </a>    }
+</span><span id="148" class="l"><a class="l" href="#148">148: </a>    
+</span><span id="149" class="l"><a class="l" href="#149">149: </a>    <span class="php-comment">/**
+</span></span><span id="150" class="l"><a class="l" href="#150">150: </a><span class="php-comment">     * 
+</span></span><span id="151" class="l"><a class="l" href="#151">151: </a><span class="php-comment">     * @param type $userId
+</span></span><span id="152" class="l"><a class="l" href="#152">152: </a><span class="php-comment">     * @return type
+</span></span><span id="153" class="l"><a class="l" href="#153">153: </a><span class="php-comment">     */</span>
+</span><span id="154" class="l"><a class="l" href="#154">154: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_getUserMenu" href="#_getUserMenu">getUserMenu</a> (<span class="php-var">$userId</span> = <span class="php-keyword1">null</span>) {
+</span><span id="155" class="l"><a class="l" href="#155">155: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$userId</span> == <span class="php-keyword1">null</span>) {
+</span><span id="156" class="l"><a class="l" href="#156">156: </a>            <span class="php-var">$userId</span> = Auth::user()-&gt;id;
+</span><span id="157" class="l"><a class="l" href="#157">157: </a>        }
+</span><span id="158" class="l"><a class="l" href="#158">158: </a>        
+</span><span id="159" class="l"><a class="l" href="#159">159: </a>        <span class="php-var">$menus</span> = DB::table(<span class="php-quote">'users as u'</span>)-&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'usergroups as ug'</span>, <span class="php-quote">'u.usergroup_id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'ug.id'</span>)
+</span><span id="160" class="l"><a class="l" href="#160">160: </a>                -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_menu_permissions as mp'</span>, <span class="php-quote">'mp.usergroup_id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'ug.id'</span>)
+</span><span id="161" class="l"><a class="l" href="#161">161: </a>                -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_menus as m'</span>, <span class="php-quote">'m.id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'mp.menu_id'</span>)
+</span><span id="162" class="l"><a class="l" href="#162">162: </a>                -&gt;<span class="php-keyword2">join</span>(<span class="php-quote">'_db_menus as m2'</span>, <span class="php-quote">'m2.parent_id'</span>, <span class="php-quote">'='</span>, <span class="php-quote">'m.id'</span>)
+</span><span id="163" class="l"><a class="l" href="#163">163: </a>                -&gt;where(<span class="php-quote">'u.id'</span>, <span class="php-quote">'='</span>, <span class="php-var">$userId</span>)
+</span><span id="164" class="l"><a class="l" href="#164">164: </a>                -&gt;select(<span class="php-quote">'u.username'</span>, <span class="php-quote">'ug.group'</span>, 
+</span><span id="165" class="l"><a class="l" href="#165">165: </a>                        <span class="php-quote">'m.id'</span>, <span class="php-quote">'m.icon_class'</span>, <span class="php-quote">'m.label'</span>, <span class="php-quote">'m.href'</span>, <span class="php-quote">'m.parent_id'</span>, 
+</span><span id="166" class="l"><a class="l" href="#166">166: </a>                        <span class="php-quote">'m2.id as m2_id'</span>, <span class="php-quote">'m2.icon_class as m2_icon_class'</span>, <span class="php-quote">'m2.label as m2_label'</span>, 
+</span><span id="167" class="l"><a class="l" href="#167">167: </a>                        <span class="php-quote">'m2.href as m2_href'</span>, <span class="php-quote">'m2.parent_id as m2_parent_id'</span>)-&gt;get();
+</span><span id="168" class="l"><a class="l" href="#168">168: </a>
+</span><span id="169" class="l"><a class="l" href="#169">169: </a>
+</span><span id="170" class="l"><a class="l" href="#170">170: </a>        
+</span><span id="171" class="l"><a class="l" href="#171">171: </a>        <span class="php-var">$menuA</span> = <span class="php-keyword1">array</span>();
+</span><span id="172" class="l"><a class="l" href="#172">172: </a>        <span class="php-keyword1">foreach</span>(<span class="php-var">$menus</span> <span class="php-keyword1">as</span> <span class="php-var">$menu</span>) {
+</span><span id="173" class="l"><a class="l" href="#173">173: </a>            <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$menuA</span>[<span class="php-var">$menu</span>-&gt;label])) {
+</span><span id="174" class="l"><a class="l" href="#174">174: </a>                <span class="php-var">$menuA</span>[<span class="php-var">$menu</span>-&gt;label] = <span class="php-keyword1">array</span>();
+</span><span id="175" class="l"><a class="l" href="#175">175: </a>            }
+</span><span id="176" class="l"><a class="l" href="#176">176: </a>            <span class="php-var">$menuA</span>[<span class="php-var">$menu</span>-&gt;label][] = <span class="php-keyword1">array</span>(<span class="php-quote">'username'</span>=&gt;<span class="php-var">$menu</span>-&gt;username, <span class="php-quote">'group'</span>=&gt;<span class="php-var">$menu</span>-&gt;group, 
+</span><span id="177" class="l"><a class="l" href="#177">177: </a>                <span class="php-quote">'id'</span>=&gt;<span class="php-var">$menu</span>-&gt;id, <span class="php-quote">'icon_class'</span>=&gt;<span class="php-var">$menu</span>-&gt;icon_class, <span class="php-quote">'label'</span>=&gt;<span class="php-var">$menu</span>-&gt;label, 
+</span><span id="178" class="l"><a class="l" href="#178">178: </a>                <span class="php-quote">'href'</span>=&gt;<span class="php-var">$menu</span>-&gt;href, <span class="php-quote">'parent_id'</span>=&gt;<span class="php-var">$menu</span>-&gt;parent_id, <span class="php-quote">'m2_id'</span>=&gt;<span class="php-var">$menu</span>-&gt;m2_id, 
+</span><span id="179" class="l"><a class="l" href="#179">179: </a>                <span class="php-quote">'m2_icon_class'</span>=&gt;<span class="php-var">$menu</span>-&gt;m2_icon_class, <span class="php-quote">'m2_label'</span>=&gt;<span class="php-var">$menu</span>-&gt;m2_label, 
+</span><span id="180" class="l"><a class="l" href="#180">180: </a>                <span class="php-quote">'m2_href'</span>=&gt;<span class="php-var">$menu</span>-&gt;m2_href, <span class="php-quote">'m2_parent_id'</span>=&gt;<span class="php-var">$menu</span>-&gt;m2_parent_id);
+</span><span id="181" class="l"><a class="l" href="#181">181: </a>        }
+</span><span id="182" class="l"><a class="l" href="#182">182: </a>        <span class="php-keyword1">return</span> <span class="php-var">$menuA</span>;
+</span><span id="183" class="l"><a class="l" href="#183">183: </a>    }
+</span><span id="184" class="l"><a class="l" href="#184">184: </a>    
+</span><span id="185" class="l"><a class="l" href="#185">185: </a>    <span class="php-comment">/**
+</span></span><span id="186" class="l"><a class="l" href="#186">186: </a><span class="php-comment">     * Build a menu array from _db_menus
+</span></span><span id="187" class="l"><a class="l" href="#187">187: </a><span class="php-comment">     * 
+</span></span><span id="188" class="l"><a class="l" href="#188">188: </a><span class="php-comment">     * @param type $userId
+</span></span><span id="189" class="l"><a class="l" href="#189">189: </a><span class="php-comment">     * @return type
+</span></span><span id="190" class="l"><a class="l" href="#190">190: </a><span class="php-comment">     */</span>
+</span><span id="191" class="l"><a class="l" href="#191">191: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getMenu" href="#_getMenu">getMenu</a>(<span class="php-var">$userId</span>=<span class="php-keyword1">null</span>)
+</span><span id="192" class="l"><a class="l" href="#192">192: </a>    {
+</span><span id="193" class="l"><a class="l" href="#193">193: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">static</span>::getUserMenu(<span class="php-var">$userId</span>);
+</span><span id="194" class="l"><a class="l" href="#194">194: </a>    }
+</span><span id="195" class="l"><a class="l" href="#195">195: </a>
+</span><span id="196" class="l"><a class="l" href="#196">196: </a>    <span class="php-comment">/**
+</span></span><span id="197" class="l"><a class="l" href="#197">197: </a><span class="php-comment">     * Instantiate a Params object to use for Editing
+</span></span><span id="198" class="l"><a class="l" href="#198">198: </a><span class="php-comment">     * 
+</span></span><span id="199" class="l"><a class="l" href="#199">199: </a><span class="php-comment">     * @param type $status
+</span></span><span id="200" class="l"><a class="l" href="#200">200: </a><span class="php-comment">     * @param type $message
+</span></span><span id="201" class="l"><a class="l" href="#201">201: </a><span class="php-comment">     * @param type $log
+</span></span><span id="202" class="l"><a class="l" href="#202">202: </a><span class="php-comment">     * @param type $view
+</span></span><span id="203" class="l"><a class="l" href="#203">203: </a><span class="php-comment">     * @param type $action
+</span></span><span id="204" class="l"><a class="l" href="#204">204: </a><span class="php-comment">     * @param type $tableMeta
+</span></span><span id="205" class="l"><a class="l" href="#205">205: </a><span class="php-comment">     * @param type $tableActionViews
+</span></span><span id="206" class="l"><a class="l" href="#206">206: </a><span class="php-comment">     * @param type $prefix
+</span></span><span id="207" class="l"><a class="l" href="#207">207: </a><span class="php-comment">     * @param type $selects
+</span></span><span id="208" class="l"><a class="l" href="#208">208: </a><span class="php-comment">     * @param type $tables
+</span></span><span id="209" class="l"><a class="l" href="#209">209: </a><span class="php-comment">     * @param type $paginated
+</span></span><span id="210" class="l"><a class="l" href="#210">210: </a><span class="php-comment">     * @param type $primaryTables
+</span></span><span id="211" class="l"><a class="l" href="#211">211: </a><span class="php-comment">     * @return \Laravella\Crud\Params
+</span></span><span id="212" class="l"><a class="l" href="#212">212: </a><span class="php-comment">     */</span>
+</span><span id="213" class="l"><a class="l" href="#213">213: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_forEdit" href="#_forEdit">forEdit</a>(<span class="php-var">$status</span> = <span class="php-quote">&quot;success&quot;</span>, <span class="php-var">$message</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$log</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$view</span> = <span class="php-keyword1">null</span>, <span class="php-var">$action</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$tableMeta</span> = <span class="php-keyword1">null</span>, <span class="php-var">$tableActionViews</span> = <span class="php-keyword1">null</span>, <span class="php-var">$prefix</span> = <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$selects</span> = <span class="php-keyword1">null</span>, <span class="php-var">$displayType</span> = <span class="php-quote">&quot;text/html&quot;</span>, <span class="php-var">$tables</span> = <span class="php-keyword1">null</span>, <span class="php-var">$paginated</span> = <span class="php-keyword1">null</span>, <span class="php-var">$primaryTables</span> = <span class="php-keyword1">null</span>)
+</span><span id="214" class="l"><a class="l" href="#214">214: </a>    {
+</span><span id="215" class="l"><a class="l" href="#215">215: </a>        <span class="php-var">$params</span> = <span class="php-keyword1">new</span> Params(<span class="php-var">$status</span>, <span class="php-var">$message</span>, <span class="php-var">$log</span>);
+</span><span id="216" class="l"><a class="l" href="#216">216: </a>        <span class="php-keyword1">return</span> <span class="php-var">$params</span>;
+</span><span id="217" class="l"><a class="l" href="#217">217: </a>    }
+</span><span id="218" class="l"><a class="l" href="#218">218: </a>
+</span><span id="219" class="l"><a class="l" href="#219">219: </a>    <span class="php-comment">/*
+</span></span><span id="220" class="l"><a class="l" href="#220">220: </a><span class="php-comment">     * meta
+</span></span><span id="221" class="l"><a class="l" href="#221">221: </a><span class="php-comment">     * data
+</span></span><span id="222" class="l"><a class="l" href="#222">222: </a><span class="php-comment">     * name
+</span></span><span id="223" class="l"><a class="l" href="#223">223: </a><span class="php-comment">     * pagesize
+</span></span><span id="224" class="l"><a class="l" href="#224">224: </a><span class="php-comment">     * selects
+</span></span><span id="225" class="l"><a class="l" href="#225">225: </a><span class="php-comment">     */</span>
+</span><span id="226" class="l"><a class="l" href="#226">226: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_asArray" href="#_asArray">asArray</a>()
+</span><span id="227" class="l"><a class="l" href="#227">227: </a>    {
+</span><span id="228" class="l"><a class="l" href="#228">228: </a>        <span class="php-var">$returnA</span> = <span class="php-keyword1">array</span>(<span class="php-quote">&quot;action&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;action,
+</span><span id="229" class="l"><a class="l" href="#229">229: </a>            <span class="php-quote">&quot;meta&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tableMeta[<span class="php-quote">'fields_array'</span>],
+</span><span id="230" class="l"><a class="l" href="#230">230: </a>            <span class="php-quote">&quot;tableName&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tableMeta[<span class="php-quote">'table'</span>][<span class="php-quote">'name'</span>],
+</span><span id="231" class="l"><a class="l" href="#231">231: </a>            <span class="php-quote">&quot;prefix&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;prefix,
+</span><span id="232" class="l"><a class="l" href="#232">232: </a>            <span class="php-quote">&quot;pageSize&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;pageSize,
+</span><span id="233" class="l"><a class="l" href="#233">233: </a>            <span class="php-quote">&quot;view&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;view,
+</span><span id="234" class="l"><a class="l" href="#234">234: </a>            <span class="php-quote">&quot;skin&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;skin,
+</span><span id="235" class="l"><a class="l" href="#235">235: </a>            <span class="php-quote">&quot;slug&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;slug,
+</span><span id="236" class="l"><a class="l" href="#236">236: </a>            <span class="php-quote">&quot;selects&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;selects,
+</span><span id="237" class="l"><a class="l" href="#237">237: </a>            <span class="php-quote">&quot;log&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;<span class="php-keyword2">log</span>,
+</span><span id="238" class="l"><a class="l" href="#238">238: </a>            <span class="php-quote">&quot;status&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;status,
+</span><span id="239" class="l"><a class="l" href="#239">239: </a>            <span class="php-quote">&quot;message&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;message,
+</span><span id="240" class="l"><a class="l" href="#240">240: </a>            <span class="php-quote">&quot;pkName&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tableMeta[<span class="php-quote">'table'</span>][<span class="php-quote">'pk_name'</span>],
+</span><span id="241" class="l"><a class="l" href="#241">241: </a>            <span class="php-quote">&quot;displayType&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;displayType,
+</span><span id="242" class="l"><a class="l" href="#242">242: </a>            <span class="php-quote">&quot;tables&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;tables,
+</span><span id="243" class="l"><a class="l" href="#243">243: </a>            <span class="php-quote">&quot;data&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;paginated,
+</span><span id="244" class="l"><a class="l" href="#244">244: </a>            <span class="php-quote">&quot;dataA&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;dataA,
+</span><span id="245" class="l"><a class="l" href="#245">245: </a>            <span class="php-quote">&quot;pkTables&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;primaryTables,
+</span><span id="246" class="l"><a class="l" href="#246">246: </a>            <span class="php-quote">&quot;menu&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;menu,
+</span><span id="247" class="l"><a class="l" href="#247">247: </a>            <span class="php-quote">&quot;assets&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;assets,
+</span><span id="248" class="l"><a class="l" href="#248">248: </a>            <span class="php-quote">&quot;displayTypes&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;displayTypes,
+</span><span id="249" class="l"><a class="l" href="#249">249: </a>            <span class="php-quote">&quot;widgetTypes&quot;</span> =&gt; <span class="php-var">$this</span>-&gt;widgetTypes
+</span><span id="250" class="l"><a class="l" href="#250">250: </a>        ); <span class="php-comment">//$this-&gt;tables[$tableName]['tableMetaData']['table']['pk_name']);</span>
+</span><span id="251" class="l"><a class="l" href="#251">251: </a>
+</span><span id="252" class="l"><a class="l" href="#252">252: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;tableActionViews) &amp;&amp; <span class="php-keyword2">is_object</span>(<span class="php-var">$this</span>-&gt;tableActionViews))
+</span><span id="253" class="l"><a class="l" href="#253">253: </a>        {
+</span><span id="254" class="l"><a class="l" href="#254">254: </a>            <span class="php-var">$returnA</span>[<span class="php-quote">&quot;title&quot;</span>] = <span class="php-var">$this</span>-&gt;tableActionViews-&gt;title;
+</span><span id="255" class="l"><a class="l" href="#255">255: </a>        }
+</span><span id="256" class="l"><a class="l" href="#256">256: </a>        <span class="php-keyword1">else</span>
+</span><span id="257" class="l"><a class="l" href="#257">257: </a>        {
+</span><span id="258" class="l"><a class="l" href="#258">258: </a>            <span class="php-var">$returnA</span>[<span class="php-quote">&quot;title&quot;</span>] = <span class="php-quote">&quot;&quot;</span>;
+</span><span id="259" class="l"><a class="l" href="#259">259: </a>        }
+</span><span id="260" class="l"><a class="l" href="#260">260: </a>
+</span><span id="261" class="l"><a class="l" href="#261">261: </a>        <span class="php-keyword1">if</span> (Options::get(<span class="php-quote">'debug'</span>)){
+</span><span id="262" class="l"><a class="l" href="#262">262: </a>            <span class="php-var">$returnA</span>[<span class="php-quote">'params'</span>] = <span class="php-keyword2">json_encode</span>(<span class="php-var">$returnA</span>);
+</span><span id="263" class="l"><a class="l" href="#263">263: </a>        }
+</span><span id="264" class="l"><a class="l" href="#264">264: </a>
+</span><span id="265" class="l"><a class="l" href="#265">265: </a>        <span class="php-keyword1">return</span> <span class="php-var">$returnA</span>;
+</span><span id="266" class="l"><a class="l" href="#266">266: </a>    }
+</span><span id="267" class="l"><a class="l" href="#267">267: </a>
+</span><span id="268" class="l"><a class="l" href="#268">268: </a>}
+</span><span id="269" class="l"><a class="l" href="#269">269: </a>
+</span><span id="270" class="l"><a class="l" href="#270">270: </a><span class="xlang">?&gt;</span>
+</span><span id="271" class="l"><a class="l" href="#271">271: </a></span></code></pre>
 
 	<div id="footer">
 		crud API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
