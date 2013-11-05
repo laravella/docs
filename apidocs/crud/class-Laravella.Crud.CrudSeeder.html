@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Laravella\Crud\CrudSeeder | crud</title>
+
+	<script type="text/javascript" src="resources/combined.js?3599222591"></script>
+	<script type="text/javascript" src="elementlist.js?1729851014"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Composer.html">Composer<span></span></a>
+						<ul>
+				<li><a href="namespace-Composer.Autoload.html">Autoload</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Illuminate.html">Illuminate<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.html">Support<span></span></a>
+						<ul>
+				<li><a href="namespace-Illuminate.Support.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-Illuminate.Support.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Laravella.html">Laravella<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Laravella.Crud.html">Crud<span></span></a>
+						<ul>
+				<li><a href="namespace-Laravella.Crud.Exceptions.html">Exceptions</a>
+						</li>
+				<li><a href="namespace-Laravella.Crud.Facades.html">Facades</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Laravella.Crud.CrudDatabaseSeeder.html">CrudDatabaseSeeder</a></li>
+				<li><a href="class-Laravella.Crud.CrudInstallCommand.html">CrudInstallCommand</a></li>
+				<li class="active"><a href="class-Laravella.Crud.CrudSeeder.html">CrudSeeder</a></li>
+				<li><a href="class-Laravella.Crud.CrudServiceProvider.html">CrudServiceProvider</a></li>
+				<li><a href="class-Laravella.Crud.CrudUpdateCommand.html">CrudUpdateCommand</a></li>
+				<li><a href="class-Laravella.Crud.DbGopher.html">DbGopher</a></li>
+				<li><a href="class-Laravella.Crud.Log.html">Log</a></li>
+				<li><a href="class-Laravella.Crud.Options.html">Options</a></li>
+				<li><a href="class-Laravella.Crud.Params.html">Params</a></li>
+				<li><a href="class-Laravella.Crud.PostCrudSeeder.html">PostCrudSeeder</a></li>
+				<li><a href="class-Laravella.Crud.SeedActions.html">SeedActions</a></li>
+				<li><a href="class-Laravella.Crud.SeedAssets.html">SeedAssets</a></li>
+				<li><a href="class-Laravella.Crud.SeedGroups.html">SeedGroups</a></li>
+				<li><a href="class-Laravella.Crud.SeedLogs.html">SeedLogs</a></li>
+				<li><a href="class-Laravella.Crud.SeedMenus.html">SeedMenus</a></li>
+				<li><a href="class-Laravella.Crud.SeedObjects.html">SeedObjects</a></li>
+				<li><a href="class-Laravella.Crud.SeedOptions.html">SeedOptions</a></li>
+				<li><a href="class-Laravella.Crud.SeedPageTypes.html">SeedPageTypes</a></li>
+				<li><a href="class-Laravella.Crud.SeedSeverities.html">SeedSeverities</a></li>
+				<li><a href="class-Laravella.Crud.SeedTables.html">SeedTables</a></li>
+				<li><a href="class-Laravella.Crud.SeedUsergroups.html">SeedUsergroups</a></li>
+				<li><a href="class-Laravella.Crud.SeedUsers.html">SeedUsers</a></li>
+				<li><a href="class-Laravella.Crud.SeedViews.html">SeedViews</a></li>
+				<li><a href="class-Laravella.Crud.UpdateCMSFields.html">UpdateCMSFields</a></li>
+				<li><a href="class-Laravella.Crud.UpdateReferences.html">UpdateReferences</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Laravella.Crud.html" title="Summary of Laravella\Crud"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class CrudSeeder</h1>
+
+
+	<div class="description">
+	
+<p>Basic functions to manipulate meta data</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Seeder
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Laravella\Crud\CrudSeeder</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Laravella.Crud.Params.html">Laravella\Crud\Params</a>, 
+			<a href="class-Laravella.Crud.PostCrudSeeder.html">Laravella\Crud\PostCrudSeeder</a>, 
+			<a href="class-Laravella.Crud.SeedTables.html">Laravella\Crud\SeedTables</a>, 
+			<a href="class-Laravella.Crud.SeedUsers.html">Laravella\Crud\SeedUsers</a>, 
+			<a href="class-Laravella.Crud.SeedViews.html">Laravella\Crud\SeedViews</a>, 
+			<a href="class-Laravella.Crud.UpdateCMSFields.html">Laravella\Crud\UpdateCMSFields</a>, 
+			<a href="class-Laravella.Crud.UpdateReferences.html">Laravella\Crud\UpdateReferences</a>, 
+			<a href="class-Laravella.Crud.SeedActions.html">Laravella\Crud\SeedActions</a>, 
+			<a href="class-Laravella.Crud.SeedAssets.html">Laravella\Crud\SeedAssets</a>, 
+			<a href="class-Laravella.Crud.SeedGroups.html">Laravella\Crud\SeedGroups</a>, 
+			<a href="class-Laravella.Crud.SeedMenus.html">Laravella\Crud\SeedMenus</a>, 
+			<a href="class-Laravella.Crud.SeedObjects.html">Laravella\Crud\SeedObjects</a>, 
+			<a href="class-Laravella.Crud.SeedOptions.html">Laravella\Crud\SeedOptions</a>, 
+			<a href="class-Laravella.Crud.SeedPageTypes.html">Laravella\Crud\SeedPageTypes</a>, 
+			<a href="class-Laravella.Crud.SeedSeverities.html">Laravella\Crud\SeedSeverities</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Laravella.html">Laravella</a>\<a href="namespace-Laravella.Crud.html">Crud</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Laravella.Crud.CrudSeeder.html#11-888" title="Go to source code">src/Laravella/Crud/CrudSeeder.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setTitle" id="_setTitle">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTitle">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#20-29" title="Go to source code">setTitle</a>( <span>mixed <var>$slug</var></span>, <span>mixed <var>$title</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the title of a page</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the title of a page</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHeroCaption" id="_setHeroCaption">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHeroCaption">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#31-37" title="Go to source code">setHeroCaption</a>( <span>mixed <var>$mediaId</var></span>, <span>mixed <var>$caption</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set the Caption of an image (_db_medias.caption)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set the Caption of an image (_db_medias.caption)</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPageType" id="_setPageType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPageType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#42-44" title="Go to source code">setPageType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAssetType" id="_setAssetType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAssetType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#49-51" title="Go to source code">setAssetType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="linkAssetPageGroups" id="_linkAssetPageGroups">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_linkAssetPageGroups">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#53-60" title="Go to source code">linkAssetPageGroups</a>( <span>type <var>$assetGroup</var></span>, <span>type <var>$pageGroup</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$assetGroup</var></dt>
+					<dd><code>type</code><br>$id</dd>
+					<dt><var>$pageGroup</var></dt>
+					<dd><code>type</code><br>$slugs</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tableActionViewId" id="_tableActionViewId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tableActionViewId">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#63-79" title="Go to source code">tableActionViewId</a>( <span>type <var>$tableName</var></span>, <span>type <var>$actionName</var></span>, <span>type <var>$viewName</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName The name of the table</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>type</code><br>$actionName The name of the action</dd>
+					<dt><var>$viewName</var></dt>
+					<dd><code>type</code><br>$viewName The name of the view</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addPage" id="_addPage">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addPage">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#81-92" title="Go to source code">addPage</a>( <span>type <var>$tableName</var></span>, <span>type <var>$actionName</var></span>, <span>type <var>$viewName</var></span>, <span>type <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>type</code><br>$tableName</dd>
+					<dt><var>$actionName</var></dt>
+					<dd><code>type</code><br>$actionName</dd>
+					<dt><var>$viewName</var></dt>
+					<dd><code>type</code><br>$viewName</dd>
+					<dt><var>$values</var></dt>
+					<dd><code>type</code><br>$values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAsset" id="_addAsset">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAsset">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#123-138" title="Go to source code">addAsset</a>( <span>type <var>$url</var></span>, <span>type <var>$type</var> = <span class="php-quote">''</span></span>, <span>type <var>$assetGroup</var> = <span class="php-quote">''</span></span>, <span>type <var>$position</var> = <span class="php-quote">'top'</span></span>, <span>mixed <var>$vendor</var> = <span class="php-quote">''</span></span>, <span>mixed <var>$version</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$url</var></dt>
+					<dd><code>type</code><br>$url</dd>
+					<dt><var>$type</var></dt>
+					<dd><code>type</code><br>$type</dd>
+					<dt><var>$assetGroup</var></dt>
+					<dd><code>type</code><br>$vendor</dd>
+					<dt><var>$position</var></dt>
+					<dd><code>type</code><br>$version</dd>
+					<dt><var>$vendor</var></dt>
+					<dd></dd>
+					<dt><var>$version</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="linkAssetPage" id="_linkAssetPage">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_linkAssetPage">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#140-197" title="Go to source code">linkAssetPage</a>( <span>type <var>$id</var></span>, <span>type <var>$slugs</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>type</code><br>$id</dd>
+					<dt><var>$slugs</var></dt>
+					<dd><code>type</code><br>$slugs Use '*' for all pages</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="info" id="_info">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_info">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#199-202" title="Go to source code">info</a>( <span>mixed <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateReference" id="_updateReference">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateReference">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#204-301" title="Go to source code">updateReference</a>( <span>type <var>$fkTableName</var></span>, <span>type <var>$fkFieldName</var></span>, <span>type <var>$pkTableName</var></span>, <span>type <var>$pkFieldName</var></span>, <span>mixed <var>$pkDisplayFieldName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update a reference to primary keys in _db_fields</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update a reference to primary keys in _db_fields</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fkTableName</var></dt>
+					<dd><code>type</code><br>$fkTableName</dd>
+					<dt><var>$fkFieldName</var></dt>
+					<dd><code>type</code><br>$fkFieldName</dd>
+					<dt><var>$pkTableName</var></dt>
+					<dd><code>type</code><br>$pkTableName</dd>
+					<dt><var>$pkFieldName</var></dt>
+					<dd><code>type</code><br>$pkFieldName</dd>
+					<dt><var>$pkDisplayFieldName</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getId" id="_getId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getId">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#303-342" title="Go to source code">getId</a>( <span>type <var>$table</var></span>, <span>type <var>$whereField</var></span>, <span>mixed <var>$whereValue</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the id of a record based on the value of another field</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the id of a record based on the value of another field</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>type</code><br>$whereField</dd>
+					<dt><var>$whereField</var></dt>
+					<dd><code>type</code><br>$whereValue</dd>
+					<dt><var>$whereValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addSeverity" id="_addSeverity">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addSeverity">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#344-354" title="Go to source code">addSeverity</a>( <span>type <var>$severity</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a severity</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a severity</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$severity</var></dt>
+					<dd><code>type</code><br>$severity</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="makeApiKey" id="_makeApiKey">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_makeApiKey">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#356-361" title="Go to source code">makeApiKey</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createUser" id="_createUser">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createUser">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#363-403" title="Go to source code">createUser</a>( <span>type <var>$groupName</var></span>, <span>type <var>$name</var></span>, <span>type <var>$password</var></span>, <span>type <var>$email</var></span>, <span>type <var>$firstName</var></span>, <span>type <var>$lastName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a new user</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a new user</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupName</var></dt>
+					<dd><code>type</code><br>$groupName</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$name</dd>
+					<dt><var>$password</var></dt>
+					<dd><code>type</code><br>$password</dd>
+					<dt><var>$email</var></dt>
+					<dd><code>type</code><br>$email</dd>
+					<dt><var>$firstName</var></dt>
+					<dd><code>type</code><br>$firstName</dd>
+					<dt><var>$lastName</var></dt>
+					<dd><code>type</code><br>$lastName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOption" id="_addOption">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOption">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#405-420" title="Go to source code">addOption</a>( <span>type <var>$optionTypeId</var></span>, <span>type <var>$name</var></span>, <span>type <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an option</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$optionTypeId</var></dt>
+					<dd><code>type</code><br>$optionTypeId</dd>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$name</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>type</code><br>$value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOptionType" id="_addOptionType">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOptionType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#422-448" title="Go to source code">addOptionType</a>( <span>type <var>$name</var></span>, <span>type <var>$parentId</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an option type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an option type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$name</dd>
+					<dt><var>$parentId</var></dt>
+					<dd><code>type</code><br>$parentId</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOptionType" id="_getOptionType">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOptionType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#450-482" title="Go to source code">getOptionType</a>( <span>type <var>$name</var></span>, <span>type <var>$parentName</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an option type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an option type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$name</dd>
+					<dt><var>$parentName</var></dt>
+					<dd><code>type</code><br>$parentId</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAssetType" id="_addAssetType">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAssetType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#484-496" title="Go to source code">addAssetType</a>( <span>type <var>$typeName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an asset type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an asset type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeName</var></dt>
+					<dd><code>type</code><br>$typeName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addPageType" id="_addPageType">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addPageType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#498-508" title="Go to source code">addPageType</a>( <span>type <var>$pageType</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pageType</var></dt>
+					<dd><code>type</code><br>$pageType</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addGroup" id="_addGroup">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addGroup">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#510-520" title="Go to source code">addGroup</a>( <span>type <var>$groupName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a new usergroup</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a new usergroup</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$groupName</var></dt>
+					<dd><code>type</code><br>$groupName</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#522-544" title="Go to source code">delete</a>( <span>type <var>$updateTable</var></span>, <span>type <var>$whereValues</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Updates a field or inserts a record if key does not exist</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Updates a field or inserts a record if key does not exist</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$updateTable</var></dt>
+					<dd><code>type</code><br>$updateTable</dd>
+					<dt><var>$whereValues</var></dt>
+					<dd><code>type</code><br>$whereValues an array of key value pairs , or an id</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateOrInsert" id="_updateOrInsert">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateOrInsert">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#546-602" title="Go to source code">updateOrInsert</a>( <span>type <var>$updateTable</var></span>, <span>type <var>$whereValues</var></span>, <span>array <var>$insertValues</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Updates a field or inserts a record if key does not exist</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Updates a field or inserts a record if key does not exist</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$updateTable</var></dt>
+					<dd><code>type</code><br>$updateTable The table that is to be updated</dd>
+					<dt><var>$whereValues</var></dt>
+					<dd><code>type</code><br>$whereValues an array of key value pairs , or an id</dd>
+					<dt><var>$insertValues</var></dt>
+					<dd><code>type</code><br>$insertValues Used as a single value if whereField is a string, else excluded</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDivider" id="_addDivider">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDivider">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#604-608" title="Go to source code">addDivider</a>( <span>mixed <var>$parentId</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addMenu" id="_addMenu">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addMenu">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#610-635" title="Go to source code">addMenu</a>( <span>type <var>$label</var></span>, <span>type <var>$href</var></span>, <span>type <var>$iconClass</var> = <span class="php-quote">'icon-file'</span></span>, <span>type <var>$parentId</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a menu item</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a menu item</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$label</var></dt>
+					<dd><code>type</code><br>$label</dd>
+					<dt><var>$href</var></dt>
+					<dd><code>type</code><br>$href</dd>
+					<dt><var>$iconClass</var></dt>
+					<dd><code>type</code><br>$iconClass</dd>
+					<dt><var>$parentId</var></dt>
+					<dd><code>type</code><br>$parentId Can be the id or the label of the parent menu item</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addMenuPermissions" id="_addMenuPermissions">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addMenuPermissions">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#637-657" title="Go to source code">addMenuPermissions</a>( <span>type <var>$menuId</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$groupName</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add menu permissions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add menu permissions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$menuId</var></dt>
+					<dd><code>type</code><br>$menuId</dd>
+					<dt><var>$groupName</var></dt>
+					<dd><code>type</code><br>$groupName</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addWidgetType" id="_addWidgetType">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addWidgetType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#659-670" title="Go to source code">addWidgetType</a>( <span>type <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add widget type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add widget type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDisplayType" id="_addDisplayType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDisplayType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#672-688" title="Go to source code">addDisplayType</a>( <span>type <var>$name</var></span>, <span>type <var>$id</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add display_type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add display_type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$id</dd>
+					<dt><var>$id</var></dt>
+					<dd><code>type</code><br>$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addKeyType" id="_addKeyType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addKeyType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#690-706" title="Go to source code">addKeyType</a>( <span>type <var>$name</var></span>, <span>type <var>$id</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Add display_type</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add display_type</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$id</dd>
+					<dt><var>$id</var></dt>
+					<dd><code>type</code><br>$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAction" id="_addAction">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAction">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#708-720" title="Go to source code">addAction</a>( <span>type <var>$actionName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add action to _db_actions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add action to _db_actions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$actionName</var></dt>
+					<dd><code>type</code><br>$actionName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addObject" id="_addObject">
+
+		<td class="attributes"><code>
+			 public 
+			type
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addObject">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#722-734" title="Go to source code">addObject</a>( <span>type <var>$objectName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add objects to _db_actions</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add objects to _db_actions</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$objectName</var></dt>
+					<dd><code>type</code><br>$actionName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>type</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addView" id="_addView">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addView">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#736-746" title="Go to source code">addView</a>( <span>type <var>$viewName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>populate _db_views</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>populate _db_views</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$viewName</var></dt>
+					<dd><code>type</code><br>$viewName</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="populateTableActions" id="_populateTableActions">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_populateTableActions">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#748-817" title="Go to source code">populateTableActions</a>( <span>type <var>$doPermissions</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Populate table _db_pages</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Populate table _db_pages</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$doPermissions</var></dt>
+					<dd><code>type</code><br>$viewId</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="makeLabel" id="_makeLabel">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_makeLabel">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#819-827" title="Go to source code">makeLabel</a>( <span>type <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Replace _ with spaces and make first character of each word uppercase</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replace _ with spaces and make first character of each word uppercase</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>type</code><br>$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFieldType" id="_getFieldType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFieldType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#829-841" title="Go to source code">getFieldType</a>( <span>mixed <var>$fieldType</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns varchar if fieldType = varchar(100) etc.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns varchar if fieldType = varchar(100) etc.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFieldLength" id="_getFieldLength">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFieldLength">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#843-858" title="Go to source code">getFieldLength</a>( <span>mixed <var>$fieldType</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns 100 if fieldType = varchar(100) etc.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns 100 if fieldType = varchar(100) etc.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFieldWidth" id="_getFieldWidth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFieldWidth">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#860-866" title="Go to source code">getFieldWidth</a>( <span>mixed <var>$fieldType</var></span>, <span>mixed <var>$fieldLength</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Try and calculate the width of the widget to display the field in</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Try and calculate the width of the widget to display the field in</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFieldWidget" id="_getFieldWidget">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFieldWidget">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#868-874" title="Go to source code">getFieldWidget</a>( <span>mixed <var>$fieldType</var></span>, <span>mixed <var>$fieldLength</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Try and calculate the best widget to display the field in. Define the widget
+in json</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Try and calculate the best widget to display the field in. Define the widget
+in json</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDisplayType" id="_getDisplayType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDisplayType">#</a>
+		<code><a href="source-class-Laravella.Crud.CrudSeeder.html#876-886" title="Go to source code">getDisplayType</a>( <span>mixed <var>$colRec</var></span>, <span>mixed <var>$types</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		crud API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

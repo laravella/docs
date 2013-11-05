@@ -38,27 +38,6 @@ A sweet file uploader from [blueimp](https://github.com/blueimp/jQuery-File-Uplo
 <a href="images/large-menu-permissions.png"><img alt="Menu Permissions" src="images/large-menu-permissions.png" title="Menu Permissions" style="border:5px solid #f0e0d0; width: 640px" /></a>
 <hr />
 
-Quick start guide
--------------------
-1. **Download** the laravella project (Git clone or zip extract)
-2. **Run : composer update** (or : php composer.phar update)
-3. You should have a database server running and a target database created.
-4. **Edit database details** in /app/config/database.php.
-5. **Add providers** in /app/config/app.php : 
-> `'providers' => array(...` <br />
-> `'Laravella\Laravella\LaravellaServiceProvider',` <br />
-> `'Laravella\Crud\CrudServiceProvider',` <br />
-> `'Laravella\CMS\CMSServiceProvider',` <br />
-> `'Laravella\Uploader\UploaderServiceProvider')`
-6. **Install with : ** with `php artisan laravella:install`
-7. You can start a development server with : `php artisan serve --port 80` from the command line
-8. Browse to :
-> <http://localhost> for the frontend <br />
-> <http://localhost/db/select/_db_tables> for crud console  <br />
-> <http://localhost/db/select/{tablename}> to edit an existing table  <br />
-> Default username is **admin@yourwebsite.com** and password is **ravel**
-9. Run `php artisan crud:install` again to regenerate meta data after you've added or altered tables.
-
 API Docs
 -------------------
 + Laravella
@@ -74,6 +53,9 @@ License
 
 What's new
 -------------------
+4.0.20131105 <br />
+Skins added
+
 4.1.009 <br />
 Ravel replaced with CMS
 
