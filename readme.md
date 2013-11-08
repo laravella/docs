@@ -53,6 +53,11 @@ License
 
 What's new
 -------------------
+v4.0.20131108
+Search fixed
+Menu link to log fixed
+Skins made independant of skins package, any package can contain a skin
+
 4.0.20131105 <br />
 Skins added
 
